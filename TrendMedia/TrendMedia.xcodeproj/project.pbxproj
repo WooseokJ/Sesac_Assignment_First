@@ -82,28 +82,68 @@
 		E15B030E2884DDC6003F2C85 /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
-				E1B8087D288527F4006651D1 /* Setting.storyboard */,
+				E15B031D2884DDCA003F2C85 /* Info.plist */,
 				E1A34B04288640750050FFA5 /* Intro.storyboard */,
 				E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */,
+				E1A34B0C2886451A0050FFA5 /* UIViewController+Extension.swift */,
+				E18C97722886A74300937108 /* setting */,
+				E18C976F2886A69B00937108 /* Buckelist */,
+				E18C976E2886A69500937108 /* Search */,
+				E18C97702886A71600937108 /* basic */,
+				E18C97712886A72E00937108 /* Home */,
+			);
+			path = TrendMedia;
+			sourceTree = "<group>";
+		};
+		E18C976E2886A69500937108 /* Search */ = {
+			isa = PBXGroup;
+			children = (
 				E1A34AFF288640200050FFA5 /* Search.storyboard */,
 				E1A34B0A2886441E0050FFA5 /* SearchViewController.swift */,
-				E1A34B0C2886451A0050FFA5 /* UIViewController+Extension.swift */,
-				E1A34B01288640430050FFA5 /* trend.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E18C976F2886A69B00937108 /* Buckelist */ = {
+			isa = PBXGroup;
+			children = (
 				E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */,
 				E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */,
+				E1A34B01288640430050FFA5 /* trend.storyboard */,
 				E1A34B08288644140050FFA5 /* TrendViewController.swift */,
+			);
+			path = Buckelist;
+			sourceTree = "<group>";
+		};
+		E18C97702886A71600937108 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				E15B03182884DDCA003F2C85 /* Assets.xcassets */,
+				E15B031A2884DDCA003F2C85 /* LaunchScreen.storyboard */,
 				E15B030F2884DDC6003F2C85 /* AppDelegate.swift */,
 				E15B03112884DDC6003F2C85 /* SceneDelegate.swift */,
 				E15B03132884DDC6003F2C85 /* ViewController.swift */,
-				E1B8087F2885393C006651D1 /* SettingTableViewController.swift */,
-				E15B03252884FE35003F2C85 /* HomeTableViewController.swift */,
 				E15B03152884DDC6003F2C85 /* Main.storyboard */,
-				E15B03232884F114003F2C85 /* Home.storyboard */,
-				E15B03182884DDCA003F2C85 /* Assets.xcassets */,
-				E15B031A2884DDCA003F2C85 /* LaunchScreen.storyboard */,
-				E15B031D2884DDCA003F2C85 /* Info.plist */,
 			);
-			path = TrendMedia;
+			path = basic;
+			sourceTree = "<group>";
+		};
+		E18C97712886A72E00937108 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E15B03252884FE35003F2C85 /* HomeTableViewController.swift */,
+				E15B03232884F114003F2C85 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E18C97722886A74300937108 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				E1B8087D288527F4006651D1 /* Setting.storyboard */,
+				E1B8087F2885393C006651D1 /* SettingTableViewController.swift */,
+			);
+			path = setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

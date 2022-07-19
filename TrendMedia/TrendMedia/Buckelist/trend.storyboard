@@ -46,13 +46,34 @@
         <scene sceneID="2pq-KK-bQb">
             <objects>
                 <tableViewController id="lHc-9e-K7n" customClass="BucketlistTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CGJ-DP-imT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CGJ-DP-imT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Eff-02-vJd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0f-nV-yh4">
+                                    <rect key="frame" x="20" y="20" width="374" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="userTextFieldReturn:" destination="lHc-9e-K7n" eventType="editingDidEndOnExit" id="71S-G7-erW"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="F0f-nV-yh4" secondAttribute="bottom" constant="20" id="915-vh-G5c"/>
+                                <constraint firstItem="F0f-nV-yh4" firstAttribute="top" secondItem="Eff-02-vJd" secondAttribute="top" constant="20" id="C3a-KC-MqE"/>
+                                <constraint firstItem="F0f-nV-yh4" firstAttribute="leading" secondItem="Eff-02-vJd" secondAttribute="leading" constant="20" id="KTr-ZR-632"/>
+                                <constraint firstAttribute="trailing" secondItem="F0f-nV-yh4" secondAttribute="trailing" constant="20" id="fZH-tz-x88"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BucketlistTableViewCell" rowHeight="80" id="5s9-fV-w4J" customClass="BucketlistTableViewCell" customModule="TrendMedia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="120.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5s9-fV-w4J" id="f5h-WZ-PTu">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -108,6 +129,9 @@
                             <outlet property="delegate" destination="lHc-9e-K7n" id="wJC-Nu-aDD"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="userTextField" destination="F0f-nV-yh4" id="A6x-mC-Dvo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIf-8h-7sj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

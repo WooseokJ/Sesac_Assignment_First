@@ -19,7 +19,4 @@ class SearchViewController: UIViewController {
         
     }
 }
-    
-    
 
-}
