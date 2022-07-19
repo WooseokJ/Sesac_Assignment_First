@@ -18,7 +18,7 @@ class SearchViewController: UIViewController {
         
         
     }
-    
+}
     
     
 
