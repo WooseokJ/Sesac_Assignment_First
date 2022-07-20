@@ -45,7 +45,7 @@ class ShoppingTableViewController: UITableViewController {
         cell.contentLabel.font = .boldSystemFont(ofSize: 18)
         cell.checkImage.image = UIImage(systemName: "checkmark.square")
         cell.bookmarkButton2.titleLabel?.text = ""
-        cell.bookmarkButton2.imageView?.image = UIImage(systemName: "checkmark.square")
+        cell.bookmarkButton2.imageView?.image = UIImage(systemName: "star")
         cell.shopView.backgroundColor = .systemGray3
         
         return cell
