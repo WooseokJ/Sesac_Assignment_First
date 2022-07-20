@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E14D5B582886ECBF00B70347 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14D5B572886ECBF00B70347 /* Shopping.storyboard */; };
+		E14D5B5A2886F15300B70347 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */; };
+		E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */; };
 		E15B03102884DDC6003F2C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B030F2884DDC6003F2C85 /* AppDelegate.swift */; };
 		E15B03122884DDC6003F2C85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B03112884DDC6003F2C85 /* SceneDelegate.swift */; };
 		E15B03142884DDC6003F2C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B03132884DDC6003F2C85 /* ViewController.swift */; };
@@ -15,6 +18,15 @@
 		E15B031C2884DDCA003F2C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15B031A2884DDCA003F2C85 /* LaunchScreen.storyboard */; };
 		E15B03242884F114003F2C85 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15B03232884F114003F2C85 /* Home.storyboard */; };
 		E15B03262884FE35003F2C85 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B03252884FE35003F2C85 /* HomeTableViewController.swift */; };
+		E174E40A288783F900B11EC2 /* TrendMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E174E409288783F900B11EC2 /* TrendMedia.storyboard */; };
+		E174E40C2887872800B11EC2 /* TrendMediaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E40B2887872800B11EC2 /* TrendMediaTableViewController.swift */; };
+		E174E40E2887877400B11EC2 /* TrendMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E40D2887877400B11EC2 /* TrendMediaTableViewCell.swift */; };
+		E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E40F28878CA900B11EC2 /* StructMovie.swift */; };
+		E174E4142887953900B11EC2 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E4132887953900B11EC2 /* MovieInfo.swift */; };
+		E174E41628879AA000B11EC2 /* RecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */; };
+		E174E41828879DEC00B11EC2 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */; };
+		E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41A2887AE5400B11EC2 /* Kingfisher */; };
+		E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41D2887AE5F00B11EC2 /* Toast */; };
 		E1A34B00288640200050FFA5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34AFF288640200050FFA5 /* Search.storyboard */; };
 		E1A34B02288640430050FFA5 /* trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B01288640430050FFA5 /* trend.storyboard */; };
 		E1A34B05288640750050FFA5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B04288640750050FFA5 /* Intro.storyboard */; };
@@ -29,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E14D5B572886ECBF00B70347 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		E15B030C2884DDC6003F2C85 /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15B030F2884DDC6003F2C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E15B03112884DDC6003F2C85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +54,13 @@
 		E15B031D2884DDCA003F2C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E15B03232884F114003F2C85 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E15B03252884FE35003F2C85 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		E174E409288783F900B11EC2 /* TrendMedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrendMedia.storyboard; sourceTree = "<group>"; };
+		E174E40B2887872800B11EC2 /* TrendMediaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaTableViewController.swift; sourceTree = "<group>"; };
+		E174E40D2887877400B11EC2 /* TrendMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaTableViewCell.swift; sourceTree = "<group>"; };
+		E174E40F28878CA900B11EC2 /* StructMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMovie.swift; sourceTree = "<group>"; };
+		E174E4132887953900B11EC2 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieInfo.swift; path = TrendMedia/MovieInfo.swift; sourceTree = SOURCE_ROOT; };
+		E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewController.swift; sourceTree = "<group>"; };
+		E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1A34AFF288640200050FFA5 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		E1A34B01288640430050FFA5 /* trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = trend.storyboard; sourceTree = "<group>"; };
 		E1A34B04288640750050FFA5 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
@@ -57,12 +79,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */,
+				E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E14D5B562886E3E000B70347 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */,
+				E14D5B572886ECBF00B70347 /* Shopping.storyboard */,
+				E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
 		E15B03032884DDC6003F2C85 = {
 			isa = PBXGroup;
 			children = (
@@ -84,13 +118,25 @@
 			children = (
 				E15B031D2884DDCA003F2C85 /* Info.plist */,
 				E1A34B04288640750050FFA5 /* Intro.storyboard */,
-				E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */,
-				E1A34B0C2886451A0050FFA5 /* UIViewController+Extension.swift */,
+				E174E406288783BB00B11EC2 /* TrendMedia */,
+				E14D5B562886E3E000B70347 /* Shopping */,
 				E18C97722886A74300937108 /* setting */,
 				E18C976F2886A69B00937108 /* Buckelist */,
 				E18C976E2886A69500937108 /* Search */,
 				E18C97702886A71600937108 /* basic */,
 				E18C97712886A72E00937108 /* Home */,
+			);
+			path = TrendMedia;
+			sourceTree = "<group>";
+		};
+		E174E406288783BB00B11EC2 /* TrendMedia */ = {
+			isa = PBXGroup;
+			children = (
+				E174E4132887953900B11EC2 /* MovieInfo.swift */,
+				E174E409288783F900B11EC2 /* TrendMedia.storyboard */,
+				E174E40D2887877400B11EC2 /* TrendMediaTableViewCell.swift */,
+				E174E40B2887872800B11EC2 /* TrendMediaTableViewController.swift */,
+				E174E40F28878CA900B11EC2 /* StructMovie.swift */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -107,9 +153,13 @@
 		E18C976F2886A69B00937108 /* Buckelist */ = {
 			isa = PBXGroup;
 			children = (
+				E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */,
+				E1A34B0C2886451A0050FFA5 /* UIViewController+Extension.swift */,
 				E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */,
 				E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */,
 				E1A34B01288640430050FFA5 /* trend.storyboard */,
+				E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */,
+				E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */,
 				E1A34B08288644140050FFA5 /* TrendViewController.swift */,
 			);
 			path = Buckelist;
@@ -162,6 +212,10 @@
 			dependencies = (
 			);
 			name = TrendMedia;
+			packageProductDependencies = (
+				E174E41A2887AE5400B11EC2 /* Kingfisher */,
+				E174E41D2887AE5F00B11EC2 /* Toast */,
+			);
 			productName = TrendMedia;
 			productReference = E15B030C2884DDC6003F2C85 /* TrendMedia.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +244,10 @@
 				Base,
 			);
 			mainGroup = E15B03032884DDC6003F2C85;
+			packageReferences = (
+				E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = E15B030D2884DDC6003F2C85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,8 +268,10 @@
 				E1A34B05288640750050FFA5 /* Intro.storyboard in Resources */,
 				E15B03172884DDC6003F2C85 /* Main.storyboard in Resources */,
 				E1A34B00288640200050FFA5 /* Search.storyboard in Resources */,
+				E14D5B582886ECBF00B70347 /* Shopping.storyboard in Resources */,
 				E15B03242884F114003F2C85 /* Home.storyboard in Resources */,
 				E1A34B02288640430050FFA5 /* trend.storyboard in Resources */,
+				E174E40A288783F900B11EC2 /* TrendMedia.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +282,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E174E4142887953900B11EC2 /* MovieInfo.swift in Sources */,
+				E174E41628879AA000B11EC2 /* RecommendCollectionViewController.swift in Sources */,
 				E1A34B0D2886451A0050FFA5 /* UIViewController+Extension.swift in Sources */,
+				E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */,
+				E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */,
+				E174E40E2887877400B11EC2 /* TrendMediaTableViewCell.swift in Sources */,
+				E14D5B5A2886F15300B70347 /* ShoppingTableViewController.swift in Sources */,
 				E15B03262884FE35003F2C85 /* HomeTableViewController.swift in Sources */,
 				E1A34B0B2886441E0050FFA5 /* SearchViewController.swift in Sources */,
 				E15B03142884DDC6003F2C85 /* ViewController.swift in Sources */,
+				E174E40C2887872800B11EC2 /* TrendMediaTableViewController.swift in Sources */,
 				E15B03102884DDC6003F2C85 /* AppDelegate.swift in Sources */,
 				E15B03122884DDC6003F2C85 /* SceneDelegate.swift in Sources */,
+				E174E41828879DEC00B11EC2 /* RecommendCollectionViewCell.swift in Sources */,
 				E1A34B09288644140050FFA5 /* TrendViewController.swift in Sources */,
 				E1A34B1128864B8E0050FFA5 /* BucketlistTableViewController.swift in Sources */,
 				E1A34B0F2886478C0050FFA5 /* UITextField+Extension.swift in Sources */,
@@ -452,6 +520,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E174E41A2887AE5400B11EC2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E174E41D2887AE5F00B11EC2 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E15B03042884DDC6003F2C85 /* Project object */;
 }
