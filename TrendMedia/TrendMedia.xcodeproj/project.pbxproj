@@ -10,6 +10,7 @@
 		E14D5B582886ECBF00B70347 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14D5B572886ECBF00B70347 /* Shopping.storyboard */; };
 		E14D5B5A2886F15300B70347 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */; };
 		E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */; };
+		E1566C832887C3430017D77B /* DesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1566C822887C3430017D77B /* DesignExtension.swift */; };
 		E15B03102884DDC6003F2C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B030F2884DDC6003F2C85 /* AppDelegate.swift */; };
 		E15B03122884DDC6003F2C85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B03112884DDC6003F2C85 /* SceneDelegate.swift */; };
 		E15B03142884DDC6003F2C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B03132884DDC6003F2C85 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		E14D5B572886ECBF00B70347 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 		E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		E1566C822887C3430017D77B /* DesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignExtension.swift; sourceTree = "<group>"; };
 		E15B030C2884DDC6003F2C85 /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15B030F2884DDC6003F2C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E15B03112884DDC6003F2C85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				E14D5B5B2886FA5E00B70347 /* ShoppingTableViewCell.swift */,
 				E14D5B572886ECBF00B70347 /* Shopping.storyboard */,
 				E14D5B592886F15300B70347 /* ShoppingTableViewController.swift */,
+				E1566C822887C3430017D77B /* DesignExtension.swift */,
 			);
 			path = Shopping;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				E1A34B0D2886451A0050FFA5 /* UIViewController+Extension.swift in Sources */,
 				E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */,
 				E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */,
+				E1566C832887C3430017D77B /* DesignExtension.swift in Sources */,
 				E174E40E2887877400B11EC2 /* TrendMediaTableViewCell.swift in Sources */,
 				E14D5B5A2886F15300B70347 /* ShoppingTableViewController.swift in Sources */,
 				E15B03262884FE35003F2C85 /* HomeTableViewController.swift in Sources */,

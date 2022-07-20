@@ -19,7 +19,7 @@ class TrendMediaTableViewController: UITableViewController {
 //        Movie(title: "괴물", releaseDate: "22.22.22", overview: "괴물줄거리", runtime: 80, rate: 4.3)]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -50,7 +50,7 @@ class TrendMediaTableViewController: UITableViewController {
     }
     // 셀높이
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.height / 8 // .height 까진 셀의전체높이
+        return UIScreen.main.bounds.height / 6 // .height 까진 셀의전체높이
     }
     
    

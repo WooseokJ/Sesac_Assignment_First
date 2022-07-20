@@ -29,5 +29,8 @@ class TrendMediaTableViewCell: UITableViewCell {
         DateLabel.text = "\(data.releaseDate) \(data.runtime)분 평점:\(data.rate), "
         ContentLabel.text = " \(data.overview)"
         ContentLabel.numberOfLines = 0
+        
+        PosterImage.image = UIImage(named: data.title)
+
     }
 }

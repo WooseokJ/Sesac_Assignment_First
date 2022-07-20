@@ -19,9 +19,11 @@ class ShoppingTableViewController: UITableViewController {
         tableView.rowHeight = 100
         AddButton.setTitle("추가", for: .normal)
         AddButton.setTitleColor(.white, for: .normal)
-        AddButton.backgroundColor = .systemGray3
+        AddButton.backgroundColor = .systemGray
         inputTextField.attributedPlaceholder = NSAttributedString(string: "무엇을 구매하실 건가요?", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        inputTextField.backgroundColor = .systemGray
+        inputTextField.backgroundColor = .systemGray3
+        AddButton.designButton()
+        
         
     }
     @IBAction func AddButton(_ sender: UIButton) {
@@ -30,17 +32,22 @@ class ShoppingTableViewController: UITableViewController {
 //        }
         list.append(inputTextField.text!)
         tableView.reloadData()
+        inputTextField.text = ""
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
-        print(list)
+        
         cell.contentLabel.text = list[indexPath.row]
+        cell.contentLabel.textAlignment = .left
         cell.contentLabel.font = .boldSystemFont(ofSize: 18)
-        cell.imageView?.image = UIImage(systemName: "cloud.fill")
-        cell.bookmarkButton.imageView?.image = UIImage(systemName: "star")
+        cell.checkImage.image = UIImage(systemName: "checkmark.square")
+        cell.bookmarkButton2.titleLabel?.text = ""
+        cell.bookmarkButton2.imageView?.image = UIImage(systemName: "checkmark.square")
+        cell.shopView.backgroundColor = .systemGray3
+        
         return cell
     }
     
