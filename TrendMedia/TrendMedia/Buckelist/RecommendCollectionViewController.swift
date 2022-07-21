@@ -20,6 +20,7 @@ class RecommendCollectionViewController: UICollectionViewController {
         
         let spacing : CGFloat = 8 // 상수로 선언해서 사용하면 편함 , 그냥숫자쓰면 Int로 들어가서 다른곳에서 오류날수도있음.
         let layoutwidth = UIScreen.main.bounds.width - (spacing * 4) // spaing * 4 는 3개의 셀에서 스크린까지 간격이 4개라서
+        print("recommend")
                                                                             
         
                                                                                     // 3을 나누는건 스크린에서 3개의셀로 정렬하려고

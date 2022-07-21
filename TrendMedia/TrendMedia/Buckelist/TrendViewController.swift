@@ -15,6 +15,7 @@ class TrendViewController: UIViewController {
 
         setbackground()
         searchTextField.borderColor()
+        print("trend")
     }
 
 }

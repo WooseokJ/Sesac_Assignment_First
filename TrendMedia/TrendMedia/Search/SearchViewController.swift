@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
         //가정) 배경색,카톡브랜드 컬러(노란) -> 녹색으로바꾸자  이러면 가내수공업처럼 노란->녹색바꾸는 노가다해야됨.
 //        view.backgroundColor = .orange 이거말고
         setbackground()
-        print(1)
+        
     }
 }
 
