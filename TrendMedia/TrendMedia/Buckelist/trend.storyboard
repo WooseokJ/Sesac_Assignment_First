@@ -180,7 +180,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cau-i9-WtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="1079"/>
+            <point key="canvasLocation" x="1377" y="1080"/>
         </scene>
         <!--Trend Table View Controller-->
         <scene sceneID="9YH-nn-Pcv">

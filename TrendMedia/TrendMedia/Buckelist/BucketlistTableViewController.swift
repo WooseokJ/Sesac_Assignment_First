@@ -1,9 +1,4 @@
-//
-//  BucketlistTableViewController.swift
-//  TrendMedia
-//
-//  Created by useok on 2022/07/19.
-//
+
 
 import UIKit
 
@@ -95,4 +90,9 @@ class BucketlistTableViewController: UITableViewController {
     }
     
 
+    
+    
+    
+    
+    
 }

@@ -1,9 +1,3 @@
-//
-//  TrendMediaTableViewController.swift
-//  TrendMedia
-//
-//  Created by useok on 2022/07/20.
-//
 
 import UIKit
 
@@ -19,6 +13,7 @@ class TrendMediaTableViewController: UITableViewController {
 //        Movie(title: "괴물", releaseDate: "22.22.22", overview: "괴물줄거리", runtime: 80, rate: 4.3)]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
     }
@@ -59,9 +54,6 @@ class TrendMediaTableViewController: UITableViewController {
         let sb = UIStoryboard(name:"trend",bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! RecommendCollectionViewController
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        
-        
     }
     
    

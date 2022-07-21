@@ -9,5 +9,6 @@ struct Movie{
     var runtime : Int
     var overview: String
     var rate : Double
+    var imagetitle : String
 
 }
