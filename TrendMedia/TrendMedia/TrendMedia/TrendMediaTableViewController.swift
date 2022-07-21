@@ -53,5 +53,16 @@ class TrendMediaTableViewController: UITableViewController {
         return UIScreen.main.bounds.height / 6 // .height 까진 셀의전체높이
     }
     
+    //row부분 클릭시 어떤 이벤트 발생할지
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("ddddddddddddddd") // 동작하지않으면? -> 1. TableView가 noSelection, 2.셀위에 버튼이아닌 셀을클릭
+        let sb = UIStoryboard(name:"trend",bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! RecommendCollectionViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+    }
+    
    
 }

@@ -16,14 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="FQC-Vu-GnN">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendMediaTableViewCell" rowHeight="130" id="TXT-Lc-rSo" customClass="TrendMediaTableViewCell" customModule="TrendMedia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="131.5" width="414" height="130"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TXT-Lc-rSo" id="luM-h6-nSg">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
@@ -89,10 +84,29 @@
                             <outlet property="delegate" destination="aX4-Zf-BfC" id="7Ab-dp-K4W"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="V1a-aK-YUe"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-QZ-mMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728.98550724637687" y="43.526785714285715"/>
+            <point key="canvasLocation" x="1621.7391304347827" y="41.517857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OwE-NZ-AuH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOg-hA-L68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="duq-2t-E1f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="psM-1i-mB0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aX4-Zf-BfC" kind="relationship" relationship="rootViewController" id="fyg-VL-xf6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="711.59420289855075" y="41.517857142857139"/>
         </scene>
     </scenes>
     <resources>

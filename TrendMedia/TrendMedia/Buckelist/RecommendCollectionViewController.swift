@@ -39,7 +39,13 @@ class RecommendCollectionViewController: UICollectionViewController {
 
     // 셀에 데이터삽입 및 디자인(cell과 비슷)
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as? RecommendCollectionViewCell
+        else{
+            return UICollectionViewCell() // 애플에서만든 인스턴스가 반환
+        }
+        
+        
         cell.posterImageView.backgroundColor = .orange
 //        cell.posterImageView?.image = UIImage(systemName: "star.fill")
         
@@ -54,6 +60,7 @@ class RecommendCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        view.makeToast("\(indexPath.item)번쨰 셀을 선택")
         view.makeToast("\(indexPath.item)번쨰 셀을 선택",duration:1,position:.center) //이건 외우는거아니고 찾아보는거 (깃허브 라이브러리 리드미확인)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

@@ -28,6 +28,8 @@
 		E174E41828879DEC00B11EC2 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */; };
 		E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41A2887AE5400B11EC2 /* Kingfisher */; };
 		E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41D2887AE5F00B11EC2 /* Toast */; };
+		E184CF7A2888E77600863688 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF792888E77600863688 /* TrendTableViewController.swift */; };
+		E184CF7C2888E78300863688 /* TrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF7B2888E78300863688 /* TrendTableViewCell.swift */; };
 		E1A34B00288640200050FFA5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34AFF288640200050FFA5 /* Search.storyboard */; };
 		E1A34B02288640430050FFA5 /* trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B01288640430050FFA5 /* trend.storyboard */; };
 		E1A34B05288640750050FFA5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B04288640750050FFA5 /* Intro.storyboard */; };
@@ -63,6 +65,8 @@
 		E174E4132887953900B11EC2 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieInfo.swift; path = TrendMedia/MovieInfo.swift; sourceTree = SOURCE_ROOT; };
 		E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewController.swift; sourceTree = "<group>"; };
 		E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		E184CF792888E77600863688 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
+		E184CF7B2888E78300863688 /* TrendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewCell.swift; sourceTree = "<group>"; };
 		E1A34AFF288640200050FFA5 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		E1A34B01288640430050FFA5 /* trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = trend.storyboard; sourceTree = "<group>"; };
 		E1A34B04288640750050FFA5 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */,
 				E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */,
 				E1A34B01288640430050FFA5 /* trend.storyboard */,
+				E184CF792888E77600863688 /* TrendTableViewController.swift */,
+				E184CF7B2888E78300863688 /* TrendTableViewCell.swift */,
 				E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */,
 				E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */,
 				E1A34B08288644140050FFA5 /* TrendViewController.swift */,
@@ -287,6 +293,8 @@
 			files = (
 				E174E4142887953900B11EC2 /* MovieInfo.swift in Sources */,
 				E174E41628879AA000B11EC2 /* RecommendCollectionViewController.swift in Sources */,
+				E184CF7A2888E77600863688 /* TrendTableViewController.swift in Sources */,
+				E184CF7C2888E78300863688 /* TrendTableViewCell.swift in Sources */,
 				E1A34B0D2886451A0050FFA5 /* UIViewController+Extension.swift in Sources */,
 				E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */,
 				E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */,
@@ -456,7 +464,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = trend;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -485,7 +493,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = trend;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

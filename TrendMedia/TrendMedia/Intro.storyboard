@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,15 +28,15 @@
             </objects>
             <point key="canvasLocation" x="230" y="-285"/>
         </scene>
-        <!--Search-->
-        <scene sceneID="KER-bb-M5F">
+        <!--Storyboard Reference-->
+        <scene sceneID="cq1-2N-JVM">
             <objects>
-                <viewControllerPlaceholder storyboardName="Search" id="9Tx-Hw-SQ6" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="uQZ-Yl-fHK"/>
+                <viewControllerPlaceholder id="LJQ-9j-y7o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sZZ-3T-dBY"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dmc-th-ykW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flw-S6-5dn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="433"/>
+            <point key="canvasLocation" x="209" y="101"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="76P-kt-Pvw">
@@ -44,35 +45,23 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F8b-BG-nPJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.79249245199999996" blue="0.49559089890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="MDY-Qc-QXv" kind="relationship" relationship="viewControllers" id="ah9-jc-DBh"/>
-                        <segue destination="yK8-KP-uZh" kind="relationship" relationship="viewControllers" id="MqG-ed-wBb"/>
                         <segue destination="2qG-up-YJA" kind="relationship" relationship="viewControllers" id="1G7-Dt-hKQ"/>
+                        <segue destination="LJQ-9j-y7o" kind="relationship" relationship="viewControllers" id="fgb-Vh-1Bg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cni-iI-nWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="-117"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="qEQ-n3-2F4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yK8-KP-uZh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="TfU-fB-Oua"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J8H-Jv-0DI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9Tx-Hw-SQ6" kind="relationship" relationship="rootViewController" id="VFw-ru-vmm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kF2-zJ-f69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="280" y="433"/>
+            <point key="canvasLocation" x="-775" y="-117"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
