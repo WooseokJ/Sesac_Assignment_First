@@ -47,6 +47,7 @@
 		E19C354428896B07007BC683 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
 		E19C354628896B13007BC683 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		E19C354828896B26007BC683 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		E19C354D28898018007BC683 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				E16516912887FD4B000BC71A /* Info.plist */,
+				E19C354D28898018007BC683 /* README.md */,
 				E165169E2887FEBB000BC71A /* basic */,
 				E165169D2887FE97000BC71A /* bookproject */,
 			);

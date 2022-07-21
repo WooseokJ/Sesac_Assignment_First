@@ -19,8 +19,16 @@ class bookCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
+        
+        // UIBarbutton
+//        let image2 = UIImage(systemName: "magnifyingglass")
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image2, style: .plain, target: nil, action: nil)
+//
+        
+        //UIButton
         SearchButtonItem.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
-//        SearchButtonItem.setTitle("", for: .normal)
+//        SearchButtonItem.setTitle("", for: .)
+//        SearchButtonItem.
 
     }
     
