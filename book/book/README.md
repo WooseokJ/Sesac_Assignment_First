@@ -6,3 +6,4 @@ https://user-images.githubusercontent.com/55547933/180215269-543d4d2f-d9fd-42df-
 
 # 학습내용  
 1.show,push를 활용하여 viewController 연결
+2.ㅇㅇ
