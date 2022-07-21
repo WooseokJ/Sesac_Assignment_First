@@ -11,7 +11,6 @@ import Kingfisher
 
 class bookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var posterImage: UIImageView!
-//
     @IBOutlet weak var pageLabel: UILabel!
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var unitView: UIView!
@@ -22,9 +21,11 @@ class bookCollectionViewCell: UICollectionViewCell {
         posterImage.image = UIImage(named: data.bookImage)
         TitleLabel.text! = data.bookTitle
         pageLabel.text! = data.bookNum
-        let color : [UIColor] = [.systemMint , .systemBrown , .systemGray3 , .lightGray, .orange, .green ,.yellow, .systemCyan]
-        
-        unitView.backgroundColor = color[2]
+        TitleLabel.numberOfLines = 1
+        let r : CGFloat = CGFloat.random(in: 0...1)
+        let g : CGFloat = CGFloat.random(in: 0...1)
+        let b : CGFloat = CGFloat.random(in: 0...1)
+        unitView.backgroundColor = UIColor(red : r,green: g,blue: b,alpha: 1)
         let url = URL(string: data.bookImage)
         posterImage.kf.setImage(with:url)
                 

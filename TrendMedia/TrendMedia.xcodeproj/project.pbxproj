@@ -30,6 +30,8 @@
 		E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41D2887AE5F00B11EC2 /* Toast */; };
 		E184CF7A2888E77600863688 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF792888E77600863688 /* TrendTableViewController.swift */; };
 		E184CF7C2888E78300863688 /* TrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF7B2888E78300863688 /* TrendTableViewCell.swift */; };
+		E19C3538288969FF007BC683 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E19C3537288969FF007BC683 /* Kingfisher */; };
+		E19C353B28896A0B007BC683 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E19C353A28896A0B007BC683 /* Toast */; };
 		E1A34B00288640200050FFA5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34AFF288640200050FFA5 /* Search.storyboard */; };
 		E1A34B02288640430050FFA5 /* trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B01288640430050FFA5 /* trend.storyboard */; };
 		E1A34B05288640750050FFA5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B04288640750050FFA5 /* Intro.storyboard */; };
@@ -85,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19C353B28896A0B007BC683 /* Toast in Frameworks */,
+				E19C3538288969FF007BC683 /* Kingfisher in Frameworks */,
 				E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */,
 				E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */,
 			);
@@ -224,6 +228,8 @@
 			packageProductDependencies = (
 				E174E41A2887AE5400B11EC2 /* Kingfisher */,
 				E174E41D2887AE5F00B11EC2 /* Toast */,
+				E19C3537288969FF007BC683 /* Kingfisher */,
+				E19C353A28896A0B007BC683 /* Toast */,
 			);
 			productName = TrendMedia;
 			productReference = E15B030C2884DDC6003F2C85 /* TrendMedia.app */;
@@ -256,6 +262,8 @@
 			packageReferences = (
 				E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				E19C3536288969FE007BC683 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E19C353928896A0B007BC683 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = E15B030D2884DDC6003F2C85 /* Products */;
 			projectDirPath = "";
@@ -550,6 +558,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		E19C3536288969FE007BC683 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		E19C353928896A0B007BC683 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -559,6 +583,16 @@
 			productName = Kingfisher;
 		};
 		E174E41D2887AE5F00B11EC2 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		E19C3537288969FF007BC683 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E19C353A28896A0B007BC683 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;

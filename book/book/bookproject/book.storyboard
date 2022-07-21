@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQ6-Hf-rnP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iHV-Lc-SUc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -47,8 +47,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d4-7x-pJS">
-                                                    <rect key="frame" x="5" y="20" width="41.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d4-7x-pJS">
+                                                    <rect key="frame" x="5" y="20" width="96" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -59,6 +59,7 @@
                                                 <constraint firstItem="7d4-7x-pJS" firstAttribute="leading" secondItem="s1y-lf-CMp" secondAttribute="leading" constant="5" id="08b-4U-2id"/>
                                                 <constraint firstItem="7d4-7x-pJS" firstAttribute="top" secondItem="s1y-lf-CMp" secondAttribute="top" constant="20" id="0eR-FZ-NoM"/>
                                                 <constraint firstAttribute="bottom" secondItem="MVr-0c-hX6" secondAttribute="bottom" constant="30" id="Bcr-2d-4es"/>
+                                                <constraint firstAttribute="trailing" secondItem="7d4-7x-pJS" secondAttribute="trailing" constant="50" id="Ibo-C2-La4"/>
                                                 <constraint firstItem="MVr-0c-hX6" firstAttribute="leading" secondItem="s1y-lf-CMp" secondAttribute="leading" constant="5" id="fdp-eM-888"/>
                                                 <constraint firstAttribute="trailing" secondItem="S9o-qY-Q7Y" secondAttribute="trailing" id="nxD-2k-OJN"/>
                                                 <constraint firstAttribute="bottom" secondItem="S9o-qY-Q7Y" secondAttribute="bottom" id="rlv-Pw-130"/>
@@ -86,10 +87,46 @@
                             <outlet property="delegate" destination="yQ6-Hf-rnP" id="FNJ-wh-z6n"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cy8-ky-LeR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="r5v-hP-soA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="eJQ-KZ-W5u">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="yQ6-Hf-rnP" eventType="touchUpInside" id="uAD-UT-9og"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="SearchButtonItem" destination="eJQ-KZ-W5u" id="l9b-67-djb"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16M-wA-jYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.014492753623188" y="89.732142857142847"/>
+            <point key="canvasLocation" x="1582.608695652174" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fUg-pi-XSl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iHV-Lc-SUc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hUq-dM-KDo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yQ6-Hf-rnP" kind="relationship" relationship="rootViewController" id="lH6-GT-uHY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waS-Ih-zRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671.01449275362324" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
