@@ -95,15 +95,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
-                                <connections>
-                                    <action selector="SearchButton:" destination="yQ6-Hf-rnP" eventType="touchUpInside" id="weN-6i-1rX"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="SearchButtonItem" destination="eJQ-KZ-W5u" id="4Iu-Tp-l7q"/>
+                        <outlet property="SearchButtonItem" destination="eJQ-KZ-W5u" id="f0E-sW-hIs"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16M-wA-jYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

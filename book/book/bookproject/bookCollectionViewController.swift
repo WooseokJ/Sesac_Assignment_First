@@ -19,6 +19,7 @@ class bookCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
+    
         
         // UIBarbutton
 //        let image2 = UIImage(systemName: "magnifyingglass")
@@ -26,10 +27,22 @@ class bookCollectionViewController: UICollectionViewController {
 //
         
         //UIButton
-        SearchButtonItem.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+       
 //        SearchButtonItem.setTitle("", for: .)
 //        SearchButtonItem.
+        let image = UIImage(systemName: "magnifyingglass")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(resultButtonClicked))
 
+
+        
+    }
+    @objc
+    func resultButtonClicked(){
+        let sb = UIStoryboard(name: "Search", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: SearchViewController.identifier) as! SearchViewController
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav,animated: true)
     }
     
  
@@ -69,6 +82,7 @@ class bookCollectionViewController: UICollectionViewController {
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         self.present(nav,animated: true)
+       
     }
     
     
