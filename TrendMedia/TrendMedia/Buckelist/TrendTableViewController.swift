@@ -28,9 +28,15 @@ class TrendTableViewController: UITableViewController {
         // step 3
         self.present(nav,animated: true) //self는 클래스 자기자신의 인스턴스(TrendTableViewController)
         
-        
-        
+        // 2.값전달
+        vc.textfieldPlacceholder = sender.currentTitle//공간에 값전당
+//        vc.userTextField.placeholder = "sdf" //오류
     }
     
 
+    
+    
+    
+    
+    
 }

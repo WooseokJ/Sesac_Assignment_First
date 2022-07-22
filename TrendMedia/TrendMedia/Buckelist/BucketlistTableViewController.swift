@@ -5,12 +5,20 @@ import UIKit
 class BucketlistTableViewController: UITableViewController {
     static let identifier = "BucketlistTableViewController" // 화면전환show시 필요
     
-
+//  1.값전달
+    var textfieldPlacceholder : String? //공간만들고
+    
+    
     @IBOutlet weak var userTextField: UITextField!
     var list = ["범죄도시2","탑건","토르"] //보고싶은 영화목록
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //3.값전달
+        userTextField.placeholder = "\(textfieldPlacceholder ?? "영화")입력해주세요.!!" // textfieldPlacceholder 이거가 nil이면 대신 "영화" 를 써라
+        
+        
+        
         tableView.rowHeight = 80 //default = 44
         list.append("마녀")
         list.append("ㅁㅁㅁ")

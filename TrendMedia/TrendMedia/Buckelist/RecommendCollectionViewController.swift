@@ -4,10 +4,22 @@ import Toast //라이브러리 가져와서사용
 import Kingfisher
 class RecommendCollectionViewController: UICollectionViewController {
 
+    // 1, 값전달 - 데이터를 받을속성(프로퍼티) 생성
+//    var movietTitleData : String?
+    var movieData : Movie? //따로따로 프로퍼티 생성안하고 구조체전체를 전달받는이유() 1.귀찮고, 유지보수힘듬
+            
+
+    
+    
+    
     var imageURL = "https://img.hankyung.com/photo/202205/01.29908345.1.jpg" //외부에서가져옴
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //3. 값전달 -프로퍼티 값 뷰에표현
+//        title = movietTitleData == nil ? "data 없음" : movietTitleData!
+        title = movieData?.title
         
         //컬렉션뷰의 셀크기,셀사이 간격등 설명
         let layout = UICollectionViewFlowLayout() // 인스턴스생성
@@ -35,7 +47,7 @@ class RecommendCollectionViewController: UICollectionViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as? RecommendCollectionViewCell
         else{
             return UICollectionViewCell() // 애플에서만든 인스턴스가 반환
-        }
+}
         cell.posterImageView.backgroundColor = .orange
 //        cell.posterImageView?.image = UIImage(systemName: "star.fill")
         
@@ -46,11 +58,14 @@ class RecommendCollectionViewController: UICollectionViewController {
     }
     // heightForRowAt(item(셀)의 높이)가 없는이유: 아이템의 높이가아니라 행의높이라서 -> FlowLayOut
     
-    //didSelectRowAt 있음(테이블뷰는) , 컬렉션뷰는 didSelectItemAt
+    // didSelectRowAt 있음(테이블뷰는) , 컬렉션뷰는 didSelectItemAt
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        view.makeToast("\(indexPath.item)번쨰 셀을 선택")
         view.makeToast("\(indexPath.item)번쨰 셀을 선택",duration:1,position:.center) //이건 외우는거아니고 찾아보는거 (깃허브 라이브러리 리드미확인)
         self.navigationController?.popViewController(animated: true)
+        
+    
+    
     }
     
 }

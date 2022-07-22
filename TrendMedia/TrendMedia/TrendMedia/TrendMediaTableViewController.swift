@@ -13,9 +13,18 @@ class TrendMediaTableViewController: UITableViewController {
 //        Movie(title: "괴물", releaseDate: "22.22.22", overview: "괴물줄거리", runtime: 80, rate: 4.3)]
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "처음으로", style: .plain, target: self, action: #selector(resultButtonClicked))
+    }
+    @objc
+    func resultButtonClicked(){
+        // ios 13이상 Scendelegates쓸떄 만 가능
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
         
-        
-        
+        let sb = UIStoryboard(name: "trend", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "TrendTableViewController") as! TrendTableViewController
+        sceneDelegate?.window?.rootViewController = vc
+        sceneDelegate?.window?.makeKeyAndVisible()
     }
     
     //색션 개수
@@ -50,10 +59,21 @@ class TrendMediaTableViewController: UITableViewController {
     
     //row부분 클릭시 어떤 이벤트 발생할지
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("ddddddddddddddd") // 동작하지않으면? -> 1. TableView가 noSelection, 2.셀위에 버튼이아닌 셀을클릭
+        print("test") // 동작하지않으면? -> 1. TableView가 noSelection, 2.셀위에 버튼이아닌 셀을클릭
         let sb = UIStoryboard(name:"trend",bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! RecommendCollectionViewController
         self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        //2 .값전달 - 뷰컨트롤러가 갖고있는 속성 데이터추가
+//        vc.movietTitleData = moviewls.movieContent[indexPath.row].title
+        let title = moviewls.movieContent[indexPath.row].title
+        let release = moviewls.movieContent[indexPath.row].releaseDate
+//        vc.movietTitleData = "\(title) \(release)"
+        
+        
+        vc.movieData = moviewls.movieContent[indexPath.row]
+        
     }
     
    

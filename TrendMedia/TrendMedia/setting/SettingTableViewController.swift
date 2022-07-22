@@ -30,6 +30,7 @@ enum SettingOptions:Int,CaseIterable{
 }
 
 
+
 class SettingTableViewController: UITableViewController {
 
     
