@@ -7,10 +7,6 @@ class RecommendCollectionViewController: UICollectionViewController {
     // 1, 값전달 - 데이터를 받을속성(프로퍼티) 생성
 //    var movietTitleData : String?
     var movieData : Movie? //따로따로 프로퍼티 생성안하고 구조체전체를 전달받는이유() 1.귀찮고, 유지보수힘듬
-            
-
-    
-    
     
     var imageURL = "https://img.hankyung.com/photo/202205/01.29908345.1.jpg" //외부에서가져옴
 

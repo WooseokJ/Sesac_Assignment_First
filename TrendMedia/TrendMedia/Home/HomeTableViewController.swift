@@ -62,7 +62,7 @@ class HomeTableViewController: UITableViewController {
             cell.textLabel?.font = .boldSystemFont(ofSize: 15)
             cell.detailTextLabel?.text = "디테일레이블"
             
-            //1. indexPath.row % 2 == 0,1을 이용
+            // 1. indexPath.row % 2 == 0,1을 이용
             /*
             if indexPath.row % 2 == 0{
                 cell.imageView?.image = UIImage(systemName: "star")

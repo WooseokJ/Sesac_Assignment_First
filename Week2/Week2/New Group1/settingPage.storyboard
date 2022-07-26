@@ -75,7 +75,7 @@
                                 <rect key="frame" x="20" y="5" width="50.5" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="list.dash" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="list.dash" catalog="system" title=""/>
                                 <connections>
                                     <segue destination="8lU-J1-ExN" kind="show" id="KBn-p5-kXn"/>
                                 </connections>

@@ -3,7 +3,9 @@
     <pages>
         <page name='class'/>
         <page name='열거형'/>
-        <page name='class 이니셜라이저'/>
         <page name='함수'/>
+        <page name='class 이니셜라이저'/>
+        <page name='Untitled Page'/>
+        <page name='지연저장프로퍼티'/>
     </pages>
 </playground>
