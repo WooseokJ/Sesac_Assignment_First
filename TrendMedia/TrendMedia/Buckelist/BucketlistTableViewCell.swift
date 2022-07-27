@@ -15,5 +15,5 @@ class BucketlistTableViewCell: UITableViewCell {
     
     static let identifier = "BucketlistTableViewCell"
     
-    
+
 }

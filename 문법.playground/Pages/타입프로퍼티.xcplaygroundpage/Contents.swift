@@ -134,3 +134,76 @@ viewType.title
 //결론: 타입저장,인스턴스연산,타입연산은 열거형,구조체 다 사용가능,
 //     인스턴스는 열거형에선 사용불가(초기화구문만들수없어서) 구조체는사용가능
 
+// 타입연산프로퍼티
+class TypeFoodResaurant{
+    var name : String{
+        willSet(newnickname){
+            print("\(name) , \(newnickname)")
+        }
+        didSet{
+            print(oldValue,"33333")
+        }
+    }
+    init(name:String){
+        self.name = name
+    }
+    
+    static var totalOrderCnt = 1 //타입저장프로퍼티
+    static var nowOrder : Int { //타입연산프로퍼티
+        get{ //필수
+            return totalOrderCnt * 5000
+        }
+        set(jack){ // 아무것도안적으면 아래에서는 jack대신 newValue로 쓰면됨.// 선택사항(옵션)
+            totalOrderCnt += jack //기본 파라미터가 jack를 쓴다 . , 값이 얼마추가될지모르니
+        }
+    }
+    
+    static var noworder23 = 10{
+        willSet{    // 변경직전에 실행
+            print("\(noworder23)에서 \(newValue) 변경예정")
+        }
+        didSet{     // 변경직후에 실행
+            print("\(noworder23)에서 \(oldValue) 변경완료")
+
+        }
+    }
+    
+}
+
+let myFood = TypeFoodResaurant(name:"아") //인스턴스생성필요없음(타입프로퍼티경우)
+myFood.name = "바뀜"
+
+TypeFoodResaurant.nowOrder // 5000 get실행(값읽기)
+
+TypeFoodResaurant.nowOrder = 2 // 15000 set실행
+TypeFoodResaurant.nowOrder
+
+// 속성감시자: 저장프로퍼티에서 주로사용, 값을 관찰하다가 변경될거같을떄 변경되었음 호출(willSet,didSet)
+
+TypeFoodResaurant.noworder23 = 33
+
+
+
+// 메소드 부분 이부분부터
+struct Coffee{  //class Coffee
+    static var name = "아아"
+    static var shot = 2
+    var price = 4000 //인스턴스(저장) 프로퍼티
+    static func plusshot(){
+        Coffee.shot += 1 //shot+=1은 오류 , 타입은타입/저장은저장끼리 논다
+//        price+=300 //인스턴스(저장) 변수라서 static함수에서 사용불가
+        
+    }
+    mutating func plusshot2(){ // 구조체에서쓴다. mutating
+        price+=300
+    }
+//    class func minusshot(){   // struct하면 class못함,(상속못하므로) , class Coffee
+//        shot -= 1
+//    }
+}
+
+//class Latte: Coffee{ // 타입메소드는 ovveride가 class는 가능, static은 불가능
+//    override class func minusshot() { // 슈퍼클래스 타입메서드를 재정의해서 쓰고싶다면 class
+//
+//    }
+//}

@@ -94,7 +94,7 @@
                                                 <constraint firstAttribute="height" constant="44" id="fZP-Ao-O1q"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title=""/>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-Kt-e87">
                                             <rect key="frame" x="80" y="18" width="314" height="44"/>
