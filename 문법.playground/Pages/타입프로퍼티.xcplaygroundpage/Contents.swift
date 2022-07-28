@@ -23,6 +23,7 @@ print(user3.nickname,User.originalName)
 var user4 = User()
 print(user4.nickname,User.originalName)
 
+// static으로 선언한 변수는 하나의값만갖지만, 인스턴스속성은 여러 인스턴스
 
 
 /** 연산프로퍼티 (인스턴스 연산 프로퍼티/ 타입 연산 프로퍼티 **/
@@ -36,10 +37,8 @@ struct BMI{
     //get은 읽기전용 프로퍼티이지만 계산하는값에따라 결과가 달라질수있기떄문에 var를 많이사용
     var BMIResult : String{//오노테이션 //연산프로퍼티        // static붙이면 오류 (static끼리는 static끼리, 인스턴스는 인스턴스끼지 해줘야해)
         get {
-            
             let bmivalue = (weight/weight) / height
             let bmistatus = bmivalue < 18.5 ? "저체중" : "정상이상"
-
             return "\(nickname)의 BMI는 \(bmivalue)로 \(bmistatus)입니다."
         }
         set{

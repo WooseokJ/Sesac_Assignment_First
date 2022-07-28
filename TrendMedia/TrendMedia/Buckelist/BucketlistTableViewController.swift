@@ -33,8 +33,9 @@ class BucketlistTableViewController: UITableViewController {
     
         var list = [Todo(title: "범죄도시2", done: true),Todo(title: "탑건", done: false)]
 //    var list = ["범죄도시2":true,"탑건":true] -> 딕셔너리는 순서없어서 cell에 추가할수없음. (생각하지마라)
-    // 클래스는 참조타입->인스턴스 자체를 변경하지않는이상 한번만 될거다.
-    // IBOutlet viewDidLoad() 호출되기 직전에 nil이 아닌지 nil인지 알수있음.
+    // 클래스는 참조타입->인스턴스 자체를 변경하지않는이상 한번만 실행될거다.
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //3.값전달
@@ -51,7 +52,7 @@ class BucketlistTableViewController: UITableViewController {
     }
     
     @objc
-    func closeButtonClicked(){ // @bjc을써야 #selector해결
+    func closeButtonClicked(){ // @objc을써야 #selector해결
         self.dismiss(animated: true) // self는 BucketlistTableViewController
     }
 
