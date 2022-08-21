@@ -6,5 +6,5 @@
 
 # 학습내용
 
-1. Stack view 를 활용하여 auto layout 적용 
-2. Iphone 8 , Iphone 11, Iphone 13 Pro max 각각의 디바이스에서 적용
+- [x] Stack view 를 활용하여 auto layout 적용 
+- [x] Iphone 8 , Iphone 11, Iphone 13 Pro max 각각의 디바이스에서 적용
