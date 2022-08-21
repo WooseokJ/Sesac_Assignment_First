@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E10400EF2874068D00E8B4D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10400EE2874068D00E8B4D2 /* SecondViewController.swift */; };
+		E16B215528B0177A00D0CE8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B215428B0177900D0CE8C /* MainViewController.swift */; };
+		E16B215C28B017E800D0CE8C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B215B28B017E800D0CE8C /* MainView.swift */; };
+		E16B215F28B01A4900D0CE8C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E16B215E28B01A4900D0CE8C /* SnapKit */; };
+		E16B216128B025AD00D0CE8C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B216028B025AD00D0CE8C /* LoginView.swift */; };
+		E16B216328B025B400D0CE8C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16B216228B025B400D0CE8C /* LoginViewController.swift */; };
+		E170605628B0EAFE0062A132 /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170605528B0EAFE0062A132 /* LoginLabel.swift */; };
+		E170605828B0EC580062A132 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170605728B0EC580062A132 /* LoginTextField.swift */; };
+		E170605A28B0F0990062A132 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170605928B0F0990062A132 /* LoginButton.swift */; };
+		E170605D28B1148F0062A132 /* identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170605C28B1148F0062A132 /* identifier.swift */; };
 		E175082C2872A50500471819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175082B2872A50500471819 /* AppDelegate.swift */; };
 		E175082E2872A50500471819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175082D2872A50500471819 /* SceneDelegate.swift */; };
 		E17508302872A50500471819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175082F2872A50500471819 /* ViewController.swift */; };
@@ -19,6 +28,14 @@
 
 /* Begin PBXFileReference section */
 		E10400EE2874068D00E8B4D2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E16B215428B0177900D0CE8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E16B215B28B017E800D0CE8C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E16B216028B025AD00D0CE8C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E16B216228B025B400D0CE8C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E170605528B0EAFE0062A132 /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
+		E170605728B0EC580062A132 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		E170605928B0F0990062A132 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		E170605C28B1148F0062A132 /* identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = identifier.swift; sourceTree = "<group>"; };
 		E17508282872A50500471819 /* MoviePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E175082B2872A50500471819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E175082D2872A50500471819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +52,90 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16B215F28B01A4900D0CE8C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E16B215628B0177E00D0CE8C /* Rescource */ = {
+			isa = PBXGroup;
+			children = (
+				E170605C28B1148F0062A132 /* identifier.swift */,
+				E17508342872A50700471819 /* Assets.xcassets */,
+				E175082B2872A50500471819 /* AppDelegate.swift */,
+				E175082D2872A50500471819 /* SceneDelegate.swift */,
+			);
+			path = Rescource;
+			sourceTree = "<group>";
+		};
+		E16B215728B0178B00D0CE8C /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E17508362872A50700471819 /* LaunchScreen.storyboard */,
+				E17508312872A50500471819 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E16B215828B017A900D0CE8C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E175082F2872A50500471819 /* ViewController.swift */,
+				E19F70C0287550F400B634A5 /* SignUpViewController.swift */,
+				E16B216428B025B700D0CE8C /* LoginVC */,
+				E16B215A28B017CF00D0CE8C /* MainVC */,
+				E10400EE2874068D00E8B4D2 /* SecondViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E16B215A28B017CF00D0CE8C /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				E16B215428B0177900D0CE8C /* MainViewController.swift */,
+				E16B215B28B017E800D0CE8C /* MainView.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		E16B216428B025B700D0CE8C /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				E170606028B13D1D0062A132 /* controller */,
+				E170605F28B13D120062A132 /* view */,
+				E170605E28B13CC60062A132 /* model */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		E170605E28B13CC60062A132 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E16B216028B025AD00D0CE8C /* LoginView.swift */,
+				E170605928B0F0990062A132 /* LoginButton.swift */,
+				E170605728B0EC580062A132 /* LoginTextField.swift */,
+				E170605528B0EAFE0062A132 /* LoginLabel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E170605F28B13D120062A132 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E170606028B13D1D0062A132 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E16B216228B025B400D0CE8C /* LoginViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		E175081F2872A50500471819 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +155,9 @@
 		E175082A2872A50500471819 /* MoviePractice */ = {
 			isa = PBXGroup;
 			children = (
-				E175082B2872A50500471819 /* AppDelegate.swift */,
-				E175082D2872A50500471819 /* SceneDelegate.swift */,
-				E175082F2872A50500471819 /* ViewController.swift */,
-				E17508312872A50500471819 /* Main.storyboard */,
-				E19F70C0287550F400B634A5 /* SignUpViewController.swift */,
-				E10400EE2874068D00E8B4D2 /* SecondViewController.swift */,
-				E17508342872A50700471819 /* Assets.xcassets */,
-				E17508362872A50700471819 /* LaunchScreen.storyboard */,
+				E16B215628B0177E00D0CE8C /* Rescource */,
+				E16B215828B017A900D0CE8C /* ViewController */,
+				E16B215728B0178B00D0CE8C /* StoryBoard */,
 				E17508392872A50700471819 /* Info.plist */,
 			);
 			path = MoviePractice;
@@ -89,6 +179,9 @@
 			dependencies = (
 			);
 			name = MoviePractice;
+			packageProductDependencies = (
+				E16B215E28B01A4900D0CE8C /* SnapKit */,
+			);
 			productName = MoviePractice;
 			productReference = E17508282872A50500471819 /* MoviePractice.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +210,9 @@
 				Base,
 			);
 			mainGroup = E175081F2872A50500471819;
+			packageReferences = (
+				E16B215D28B01A4800D0CE8C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E17508292872A50500471819 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,10 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16B216328B025B400D0CE8C /* LoginViewController.swift in Sources */,
+				E170605A28B0F0990062A132 /* LoginButton.swift in Sources */,
+				E170605D28B1148F0062A132 /* identifier.swift in Sources */,
 				E19F70C1287550F400B634A5 /* SignUpViewController.swift in Sources */,
+				E16B215C28B017E800D0CE8C /* MainView.swift in Sources */,
 				E17508302872A50500471819 /* ViewController.swift in Sources */,
 				E175082C2872A50500471819 /* AppDelegate.swift in Sources */,
+				E170605628B0EAFE0062A132 /* LoginLabel.swift in Sources */,
+				E170605828B0EC580062A132 /* LoginTextField.swift in Sources */,
+				E16B215528B0177A00D0CE8C /* MainViewController.swift in Sources */,
 				E175082E2872A50500471819 /* SceneDelegate.swift in Sources */,
+				E16B216128B025AD00D0CE8C /* LoginView.swift in Sources */,
 				E10400EF2874068D00E8B4D2 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E16B215D28B01A4800D0CE8C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E16B215E28B01A4900D0CE8C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E16B215D28B01A4800D0CE8C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17508202872A50500471819 /* Project object */;
 }
