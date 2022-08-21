@@ -1,5 +1,4 @@
-# Sesac_Assignment_First
-새싹 ios에서 내가한것들 
+# Sesac_Assignment_First(새싹 ios 7월)
 
 ## 1주차
 1. [배달의민족](https://github.com/WooseokJ/Sesac_Assignment_First/tree/main/delivery-practice/delivery-practice)<br>
