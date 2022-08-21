@@ -84,9 +84,9 @@
 			children = (
 				E175082F2872A50500471819 /* ViewController.swift */,
 				E19F70C0287550F400B634A5 /* SignUpViewController.swift */,
+				E10400EE2874068D00E8B4D2 /* SecondViewController.swift */,
 				E16B216428B025B700D0CE8C /* LoginVC */,
 				E16B215A28B017CF00D0CE8C /* MainVC */,
-				E10400EE2874068D00E8B4D2 /* SecondViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -114,9 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				E16B216028B025AD00D0CE8C /* LoginView.swift */,
-				E170605928B0F0990062A132 /* LoginButton.swift */,
-				E170605728B0EC580062A132 /* LoginTextField.swift */,
-				E170605528B0EAFE0062A132 /* LoginLabel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -124,6 +121,9 @@
 		E170605F28B13D120062A132 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E170605928B0F0990062A132 /* LoginButton.swift */,
+				E170605728B0EC580062A132 /* LoginTextField.swift */,
+				E170605528B0EAFE0062A132 /* LoginLabel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";

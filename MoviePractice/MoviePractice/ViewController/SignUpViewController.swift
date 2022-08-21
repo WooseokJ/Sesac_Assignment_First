@@ -37,7 +37,6 @@ class SignUpViewController: UIViewController{
         BtName.setTitleColor(.black, for: .normal)
         BtName.backgroundColor = .white
         BtName.layer.cornerRadius = 8
-        
     }
   
     @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {

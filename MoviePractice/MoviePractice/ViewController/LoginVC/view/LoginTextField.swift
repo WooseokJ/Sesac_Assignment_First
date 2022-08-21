@@ -20,9 +20,11 @@ class LoginTextField: UITextField {
     
     func loginTextField()  {
         self.backgroundColor = .lightGray
-        self.textAlignment = .center
+        self.textAlignment = .center // NSTextAlignment.center
         self.textColor = .white
         self.font = .systemFont(ofSize: 20)
         self.layer.cornerRadius = 8
+        self.borderStyle = .roundedRect
+        
     }
 }

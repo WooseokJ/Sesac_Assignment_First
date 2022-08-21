@@ -21,41 +21,48 @@ class LoginView: UIView {
     
     //MARK: 크기
     // jackflix
-    let titleName: UILabel = {
+    let titleLabel: UILabel = {
         let label = LoginLabel()
         label.text = "JACKFLIX"
         return label
     }()
-    
+       
     // email or phoneNumber
-    let id: UITextField = {
+    let idtextField: UITextField = {
         let textField = LoginTextField()
         textField.attributedPlaceholder = NSAttributedString(string: "이메일 및 핸드폰번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.keyboardType = .emailAddress
         return textField
     }()
     // password
-    let password: UITextField = {
+    let passwordTextField: UITextField = {
         let textField = LoginTextField()
         textField.attributedPlaceholder = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.keyboardType =  .numberPad
+        textField.textContentType = .oneTimeCode
+        textField.isSecureTextEntry = true
         
         return textField
     }()
     // nickname
-    let nickname: UITextField = {
+    let nicknameTextField: UITextField = {
         let textField = LoginTextField()
         textField.attributedPlaceholder = NSAttributedString(string: "닉네임", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.keyboardType = .emailAddress
         return textField
     }()
     // location
-    let location: UITextField = {
+    let locationTextField: UITextField = {
         let textField = LoginTextField()
         textField.attributedPlaceholder = NSAttributedString(string: "위치", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.keyboardType = .emailAddress
         return textField
     }()
     // recommendCode
-    let recommendCode: UITextField = {
+    let recommendTextField: UITextField = {
         let textField = LoginTextField()
         textField.attributedPlaceholder = NSAttributedString(string: "추천인 코드", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.keyboardType =  .numberPad
         return textField
     }()
     // signupButton
@@ -81,7 +88,7 @@ class LoginView: UIView {
     
     //MARK: 뷰에 등록
     func configure() {
-        [titleName,id,password,nickname,location,recommendCode,signupButton,addInfoLabel,switchbutton].forEach {
+        [titleLabel,idtextField,passwordTextField,nicknameTextField,locationTextField,recommendTextField,signupButton,addInfoLabel,switchbutton].forEach {
             self.addSubview($0)
         }
     }
@@ -89,7 +96,7 @@ class LoginView: UIView {
     //MARK: 위치
     func setConstants() {
         // jackflix
-        titleName.snp.makeConstraints {
+        titleLabel.snp.makeConstraints {
             $0.top.equalTo(150)
             $0.bottom.equalTo(-700)
             $0.height.equalTo(40)
@@ -98,45 +105,45 @@ class LoginView: UIView {
             $0.center.equalTo(self)
         }
         //email or phoneNumber
-        id.snp.makeConstraints {
+        idtextField.snp.makeConstraints {
             $0.center.equalTo(self)
             $0.height.equalTo(30)
             $0.leading.equalTo(50)
             $0.trailing.equalTo(-50)
-            $0.top.equalTo(titleName.snp.bottom).offset(20)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(20)
             $0.bottom.equalTo(-550)
         }
         //password
-        password.snp.makeConstraints {
+        passwordTextField.snp.makeConstraints {
             $0.center.equalTo(self)
-            $0.height.equalTo(id.snp.height)
-            $0.width.equalTo(id.snp.width)
-            $0.top.equalTo(id.snp.bottom).offset(20)
+            $0.height.equalTo(idtextField.snp.height)
+            $0.width.equalTo(idtextField.snp.width)
+            $0.top.equalTo(idtextField.snp.bottom).offset(20)
             $0.bottom.equalTo(-500)
         }
         // nickname
-        nickname.snp.makeConstraints {
+        nicknameTextField.snp.makeConstraints {
             $0.center.equalTo(self)
-            $0.height.equalTo(password.snp.height)
-            $0.width.equalTo(password.snp.width)
-            $0.top.equalTo(password.snp.bottom).offset(20)
+            $0.height.equalTo(passwordTextField.snp.height)
+            $0.width.equalTo(passwordTextField.snp.width)
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(20)
             $0.bottom.equalTo(-450)
         }
         
         // location
-        location.snp.makeConstraints {
+        locationTextField.snp.makeConstraints {
             $0.center.equalTo(self)
-            $0.height.equalTo(nickname.snp.height)
-            $0.width.equalTo(nickname.snp.width)
-            $0.top.equalTo(nickname.snp.bottom).offset(20)
+            $0.height.equalTo(nicknameTextField.snp.height)
+            $0.width.equalTo(nicknameTextField.snp.width)
+            $0.top.equalTo(nicknameTextField.snp.bottom).offset(20)
             $0.bottom.equalTo(-400)
         }
         //recommendcode
-        recommendCode.snp.makeConstraints {
+        recommendTextField.snp.makeConstraints {
             $0.center.equalTo(self)
-            $0.height.equalTo(location.snp.height)
-            $0.width.equalTo(location.snp.width)
-            $0.top.equalTo(location.snp.bottom).offset(20)
+            $0.height.equalTo(locationTextField.snp.height)
+            $0.width.equalTo(locationTextField.snp.width)
+            $0.top.equalTo(locationTextField.snp.bottom).offset(20)
             $0.bottom.equalTo(-350)
         }
         
@@ -144,8 +151,8 @@ class LoginView: UIView {
         //signupButton
         signupButton.snp.makeConstraints {
             $0.center.equalTo(self)
-            $0.height.equalTo(id.snp.height)
-            $0.width.equalTo(id.snp.width)
+            $0.height.equalTo(idtextField.snp.height)
+            $0.width.equalTo(idtextField.snp.width)
             $0.bottom.equalTo(-300)
         }
         //addinfoLabel
