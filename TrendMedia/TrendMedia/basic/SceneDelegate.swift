@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //true이면 VieController, false이면 TrendMediaTableViewController
         
         
-        
+        /* 주석 임시로 
         if UserDefaults.standard.bool(forKey: "First"){
             guard let scene = (scene as? UIWindowScene) else { return }
             // 코드로 시작화면구성
@@ -31,9 +31,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = UINavigationController(rootViewController: vc2) //네비게이션 없이는 vc2만 입력
             
         }
-        
-
         window?.makeKeyAndVisible()
+        */
+        
+        
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
+        let sb = UIStoryboard(name: "Shopping", bundle: nil)
+        let vc2 = sb.instantiateViewController(withIdentifier: "CodeShoppingViewController") as! CodeShoppingViewController
+        let nav = UINavigationController(rootViewController: vc2)
+        window?.rootViewController = nav
         
 
     }

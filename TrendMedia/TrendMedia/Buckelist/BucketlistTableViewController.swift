@@ -51,8 +51,7 @@ class BucketlistTableViewController: UITableViewController {
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: <#T##String?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
     }
     
-    @objc
-    func closeButtonClicked(){ // @objc을써야 #selector해결
+    @objc func closeButtonClicked(){ // @objc을써야 #selector해결
         self.dismiss(animated: true) // self는 BucketlistTableViewController
     }
 
