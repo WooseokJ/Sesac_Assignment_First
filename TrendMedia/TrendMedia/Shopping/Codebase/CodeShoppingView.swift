@@ -28,7 +28,7 @@ class CodeShoppingView: UIView{
     //입력 텍스트필드
     let inputTextField: UITextField = {
         let textField = CodeShppingTextField()
-        textField.attributedPlaceholder =  NSAttributedString(string:  "무엇을 구매하실건가요?", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        textField.attributedPlaceholder =  NSAttributedString(string:  "무엇을 구매하실건가요?", attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemGray])
         return textField
     }()
     // 추가 버튼
@@ -39,14 +39,16 @@ class CodeShoppingView: UIView{
     }()
 
     // 상품 테이블뷰
-    let tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let view = UITableView()
-        view.register(CodeShoppingTableViewCell.self, forCellReuseIdentifier: CodeShoppingTableViewCell.identifier)
+        view.register(CodeShoppingTableViewCell.self, forCellReuseIdentifier: CodeShoppingTableViewCell.reuseIdentifier)
+        
+        view.backgroundColor = .black
+        view.rowHeight = 30
         return view
     }()
-    
-    
-    
+
+
     //MARK: 뷰 등록
     func configure() {
         [inputTextField,addButton,tableView].forEach {
@@ -90,17 +92,32 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: CodeShoppingTableViewCell.identifier, for: indexPath) as! CodeShoppingTableViewCell
-        if tasks == nil {
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: CodeShoppingTableViewCell.reuseIdentifier, for: indexPath) as! CodeShoppingTableViewCell
+        // 셀디자인
+        cell.backgroundColor = .systemGray5
+        cell.layer.cornerRadius = 8
+        cell.clipsToBounds = true
+
+        // 셀 내용입력
+        guard tasks != nil else{return cell}
         cell.labelText.text = tasks[indexPath.row].titleName
-        cell.backgroundColor = .lightGray
-        cell.starButton.tag = indexPath.row
+        
+     
+        // 체크박스 
         cell.checkButton.tag = indexPath.row
+        cell.checkBoxCellDelegate = self
+        let checkButtonImage = tasks[indexPath.row].checkBox ? "checkmark.square.fill" : "checkmark.square"
+        cell.checkButton.setImage(UIImage(systemName: checkButtonImage), for: .normal)
+        
+        // 즐겨찾기
+        cell.checkStar.tag = indexPath.row
+        cell.checkStarCellDelegate = self
+        let checkStarImage = tasks[indexPath.row].checkStar ? "star.fill" : "star"
+        cell.checkStar.setImage(UIImage(systemName: checkStarImage), for: .normal)
         return cell
     }
+
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
@@ -114,9 +131,6 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
             tableView.reloadData()
         }
     }
-    
-
-    
     
 }
 

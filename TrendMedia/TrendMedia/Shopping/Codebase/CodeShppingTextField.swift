@@ -21,8 +21,8 @@ class CodeShppingTextField: UITextField {
     
     func textFieldDesign() {
         self.layer.cornerRadius = 8
-        self.layer.backgroundColor = UIColor.lightGray.cgColor
-        self.textColor = .white
+        self.layer.backgroundColor = UIColor.systemGray5.cgColor
+        self.textColor = .black
     }
 }
 
