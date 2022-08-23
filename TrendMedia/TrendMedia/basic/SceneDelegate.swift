@@ -33,15 +33,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         window?.makeKeyAndVisible()
         */
-        
-        
+                
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let sb = UIStoryboard(name: "Shopping", bundle: nil)
         let vc2 = sb.instantiateViewController(withIdentifier: "CodeShoppingViewController") as! CodeShoppingViewController
         let nav = UINavigationController(rootViewController: vc2)
         window?.rootViewController = nav
-        
 
     }
 

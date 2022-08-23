@@ -30,8 +30,6 @@ class CodeShoppingTableViewCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0))
     }
 
-
-
     // 라벨
     let labelText: UILabel = {
         let label = UILabel()

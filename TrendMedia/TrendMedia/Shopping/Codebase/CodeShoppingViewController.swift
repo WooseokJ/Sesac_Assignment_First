@@ -31,14 +31,14 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
     // 정렬메뉴 액션
     var menuSortedItems: [UIAction] {
         return [
-            UIAction(title: "이름순정렬", image: UIImage(systemName: "star.fill"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "titleName", ascending: true)
+            UIAction(title: "이름순정렬", image: UIImage(systemName: "star.fill"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "titleName", ascending: true)
             }),
-            UIAction(title: "즐겨찾기순", image: UIImage(systemName: "star.fill"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "checkStar", ascending: false)
+            UIAction(title: "즐겨찾기순", image: UIImage(systemName: "star.fill"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "checkStar", ascending: false)
             }),
-            UIAction(title: "체크박스순", image: UIImage(systemName: "star.fill"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "checkBox", ascending: false)
+            UIAction(title: "체크박스순", image: UIImage(systemName: "star.fill"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "checkBox", ascending: false)
             })
         ]
     }
@@ -49,20 +49,20 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
     // 필터메뉴 액션
     var menuFilterItems: [UIAction] {
         return [
-            UIAction(title: "A글자포함", image: UIImage(systemName: "star"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).filter("titleName CONTAINS[c] 'A'")
+            UIAction(title: "A글자포함", image: UIImage(systemName: "star"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).filter("titleName CONTAINS[c] 'A'")
             }),
-            UIAction(title: "B글자포함", image: UIImage(systemName: "star"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).filter("titleName CONTAINS[c] 'b'")
+            UIAction(title: "B글자포함", image: UIImage(systemName: "star"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).filter("titleName CONTAINS[c] 'b'")
             }),
-            UIAction(title: "체크박스 체크", image: UIImage(systemName: "star"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).filter("checkBox = true")
+            UIAction(title: "체크박스 체크", image: UIImage(systemName: "star"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).filter("checkBox = true")
             }),
-            UIAction(title: "즐겨찾기 체크", image: UIImage(systemName: "star"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self).filter("checkStar = true")
+            UIAction(title: "즐겨찾기 체크", image: UIImage(systemName: "star"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self).filter("checkStar = true")
             }),
-            UIAction(title: "전체", image: UIImage(systemName: "star"), handler: { _ in
-                self.tasks = self.localRealm.objects(PurchaseInfo.self)
+            UIAction(title: "전체", image: UIImage(systemName: "star"), handler: { [self] _ in
+                tasks = localRealm.objects(PurchaseInfo.self)
             })
         ]
     }
@@ -105,6 +105,7 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
             let filterButton = UIBarButtonItem(title:"필터", image: nil, primaryAction: nil, menu: filterMenu)
             self.navigationItem.leftBarButtonItems = [sortButton, filterButton]
         }
+        
         CodeShoppingTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
         
     }
