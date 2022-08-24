@@ -10,9 +10,6 @@
 		E10B082228B35B0B005EB045 /* CodeShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B082128B35B0B005EB045 /* CodeShoppingViewController.swift */; };
 		E10B082528B35B53005EB045 /* CodeShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B082428B35B53005EB045 /* CodeShoppingView.swift */; };
 		E10B082728B35C46005EB045 /* CodeShppingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B082628B35C46005EB045 /* CodeShppingTextField.swift */; };
-		E10B082A28B35E40005EB045 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E10B082928B35E40005EB045 /* Realm */; };
-		E10B082C28B35E40005EB045 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E10B082B28B35E40005EB045 /* RealmSwift */; };
-		E10B082F28B35E8D005EB045 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E10B082E28B35E8D005EB045 /* SnapKit */; };
 		E10B083128B3622C005EB045 /* CodeShoppingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B083028B3622C005EB045 /* CodeShoppingButton.swift */; };
 		E10B083428B3687A005EB045 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B083328B3687A005EB045 /* RealmModel.swift */; };
 		E10B083628B3A3F0005EB045 /* CodeShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B083528B3A3F0005EB045 /* CodeShoppingTableViewCell.swift */; };
@@ -36,12 +33,8 @@
 		E174E4142887953900B11EC2 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E4132887953900B11EC2 /* MovieInfo.swift */; };
 		E174E41628879AA000B11EC2 /* RecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E41528879AA000B11EC2 /* RecommendCollectionViewController.swift */; };
 		E174E41828879DEC00B11EC2 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174E41728879DEC00B11EC2 /* RecommendCollectionViewCell.swift */; };
-		E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41A2887AE5400B11EC2 /* Kingfisher */; };
-		E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E174E41D2887AE5F00B11EC2 /* Toast */; };
 		E184CF7A2888E77600863688 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF792888E77600863688 /* TrendTableViewController.swift */; };
 		E184CF7C2888E78300863688 /* TrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E184CF7B2888E78300863688 /* TrendTableViewCell.swift */; };
-		E19C3538288969FF007BC683 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E19C3537288969FF007BC683 /* Kingfisher */; };
-		E19C353B28896A0B007BC683 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E19C353A28896A0B007BC683 /* Toast */; };
 		E1A34B00288640200050FFA5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34AFF288640200050FFA5 /* Search.storyboard */; };
 		E1A34B02288640430050FFA5 /* trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B01288640430050FFA5 /* trend.storyboard */; };
 		E1A34B05288640750050FFA5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A34B04288640750050FFA5 /* Intro.storyboard */; };
@@ -51,6 +44,14 @@
 		E1A34B0F2886478C0050FFA5 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */; };
 		E1A34B1128864B8E0050FFA5 /* BucketlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */; };
 		E1A34B1328864D910050FFA5 /* BucketlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */; };
+		E1AB86CF28B5FA3000557606 /* CodeShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB86CE28B5FA3000557606 /* CodeShoppingDetailViewController.swift */; };
+		E1AB86D128B5FA6A00557606 /* CodeShoppingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB86D028B5FA6A00557606 /* CodeShoppingDetailView.swift */; };
+		E1AB86D728B6012E00557606 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86D628B6012E00557606 /* SwiftyJSON */; };
+		E1AB86DA28B6014A00557606 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86D928B6014A00557606 /* SnapKit */; };
+		E1AB86DD28B601D300557606 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86DC28B601D300557606 /* Kingfisher */; };
+		E1AB86E028B601E500557606 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86DF28B601E500557606 /* Toast */; };
+		E1AB86E328B6026000557606 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86E228B6026000557606 /* Realm */; };
+		E1AB86E528B6026000557606 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1AB86E428B6026000557606 /* RealmSwift */; };
 		E1B8087E288527F4006651D1 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B8087D288527F4006651D1 /* Setting.storyboard */; };
 		E1B808802885393C006651D1 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8087F2885393C006651D1 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,8 @@
 		E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewController.swift; sourceTree = "<group>"; };
 		E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewCell.swift; sourceTree = "<group>"; };
+		E1AB86CE28B5FA3000557606 /* CodeShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeShoppingDetailViewController.swift; sourceTree = "<group>"; };
+		E1AB86D028B5FA6A00557606 /* CodeShoppingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeShoppingDetailView.swift; sourceTree = "<group>"; };
 		E1B8087D288527F4006651D1 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		E1B8087F2885393C006651D1 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,13 +107,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10B082C28B35E40005EB045 /* RealmSwift in Frameworks */,
-				E19C353B28896A0B007BC683 /* Toast in Frameworks */,
-				E19C3538288969FF007BC683 /* Kingfisher in Frameworks */,
-				E10B082F28B35E8D005EB045 /* SnapKit in Frameworks */,
-				E174E41E2887AE5F00B11EC2 /* Toast in Frameworks */,
-				E174E41B2887AE5400B11EC2 /* Kingfisher in Frameworks */,
-				E10B082A28B35E40005EB045 /* Realm in Frameworks */,
+				E1AB86E528B6026000557606 /* RealmSwift in Frameworks */,
+				E1AB86E028B601E500557606 /* Toast in Frameworks */,
+				E1AB86DD28B601D300557606 /* Kingfisher in Frameworks */,
+				E1AB86D728B6012E00557606 /* SwiftyJSON in Frameworks */,
+				E1AB86DA28B6014A00557606 /* SnapKit in Frameworks */,
+				E1AB86E328B6026000557606 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +122,7 @@
 		E10B082328B35B11005EB045 /* Codebase */ = {
 			isa = PBXGroup;
 			children = (
-				E10B082128B35B0B005EB045 /* CodeShoppingViewController.swift */,
-				E10B082428B35B53005EB045 /* CodeShoppingView.swift */,
+				E1AB86D328B6002800557606 /* ViewController */,
 				E10B083528B3A3F0005EB045 /* CodeShoppingTableViewCell.swift */,
 				E14914C628B49A3E00CAC78A /* identifier.swift */,
 				E10B083328B3687A005EB045 /* RealmModel.swift */,
@@ -244,6 +245,33 @@
 			path = setting;
 			sourceTree = "<group>";
 		};
+		E1AB86D228B5FA7000557606 /* CodeShoppingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB86CE28B5FA3000557606 /* CodeShoppingDetailViewController.swift */,
+				E1AB86D028B5FA6A00557606 /* CodeShoppingDetailView.swift */,
+			);
+			path = CodeShoppingDetail;
+			sourceTree = "<group>";
+		};
+		E1AB86D328B6002800557606 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB86D428B6003900557606 /* CodeShopping */,
+				E1AB86D228B5FA7000557606 /* CodeShoppingDetail */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E1AB86D428B6003900557606 /* CodeShopping */ = {
+			isa = PBXGroup;
+			children = (
+				E10B082128B35B0B005EB045 /* CodeShoppingViewController.swift */,
+				E10B082428B35B53005EB045 /* CodeShoppingView.swift */,
+			);
+			path = CodeShopping;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,13 +289,12 @@
 			);
 			name = TrendMedia;
 			packageProductDependencies = (
-				E174E41A2887AE5400B11EC2 /* Kingfisher */,
-				E174E41D2887AE5F00B11EC2 /* Toast */,
-				E19C3537288969FF007BC683 /* Kingfisher */,
-				E19C353A28896A0B007BC683 /* Toast */,
-				E10B082928B35E40005EB045 /* Realm */,
-				E10B082B28B35E40005EB045 /* RealmSwift */,
-				E10B082E28B35E8D005EB045 /* SnapKit */,
+				E1AB86D628B6012E00557606 /* SwiftyJSON */,
+				E1AB86D928B6014A00557606 /* SnapKit */,
+				E1AB86DC28B601D300557606 /* Kingfisher */,
+				E1AB86DF28B601E500557606 /* Toast */,
+				E1AB86E228B6026000557606 /* Realm */,
+				E1AB86E428B6026000557606 /* RealmSwift */,
 			);
 			productName = TrendMedia;
 			productReference = E15B030C2884DDC6003F2C85 /* TrendMedia.app */;
@@ -298,12 +325,11 @@
 			);
 			mainGroup = E15B03032884DDC6003F2C85;
 			packageReferences = (
-				E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				E19C3536288969FE007BC683 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				E19C353928896A0B007BC683 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				E10B082828B35E40005EB045 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				E10B082D28B35E8D005EB045 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E1AB86D528B6012E00557606 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				E1AB86D828B6014A00557606 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E1AB86DB28B601D300557606 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E1AB86DE28B601E500557606 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				E1AB86E128B6026000557606 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = E15B030D2884DDC6003F2C85 /* Products */;
 			projectDirPath = "";
@@ -349,6 +375,7 @@
 				E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */,
 				E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */,
 				E10B082528B35B53005EB045 /* CodeShoppingView.swift in Sources */,
+				E1AB86D128B5FA6A00557606 /* CodeShoppingDetailView.swift in Sources */,
 				E1566C832887C3430017D77B /* DesignExtension.swift in Sources */,
 				E174E40E2887877400B11EC2 /* TrendMediaTableViewCell.swift in Sources */,
 				E14D5B5A2886F15300B70347 /* ShoppingTableViewController.swift in Sources */,
@@ -367,6 +394,7 @@
 				E1A34B1128864B8E0050FFA5 /* BucketlistTableViewController.swift in Sources */,
 				E1A34B0F2886478C0050FFA5 /* UITextField+Extension.swift in Sources */,
 				E1B808802885393C006651D1 /* SettingTableViewController.swift in Sources */,
+				E1AB86CF28B5FA3000557606 /* CodeShoppingDetailViewController.swift in Sources */,
 				E1A34B1328864D910050FFA5 /* BucketlistTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,15 +617,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E10B082828B35E40005EB045 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		E1AB86D528B6012E00557606 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
-		E10B082D28B35E8D005EB045 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		E1AB86D828B6014A00557606 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -605,7 +633,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		E1AB86DB28B601D300557606 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -613,7 +641,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+		E1AB86DE28B601E500557606 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
 			requirement = {
@@ -621,59 +649,46 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		E19C3536288969FE007BC683 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		E1AB86E128B6026000557606 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-		E19C353928896A0B007BC683 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E10B082928B35E40005EB045 /* Realm */ = {
+		E1AB86D628B6012E00557606 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E10B082828B35E40005EB045 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
+			package = E1AB86D528B6012E00557606 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
-		E10B082B28B35E40005EB045 /* RealmSwift */ = {
+		E1AB86D928B6014A00557606 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E10B082828B35E40005EB045 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-		E10B082E28B35E8D005EB045 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E10B082D28B35E8D005EB045 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = E1AB86D828B6014A00557606 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		E174E41A2887AE5400B11EC2 /* Kingfisher */ = {
+		E1AB86DC28B601D300557606 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = E1AB86DB28B601D300557606 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		E174E41D2887AE5F00B11EC2 /* Toast */ = {
+		E1AB86DF28B601E500557606 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			package = E1AB86DE28B601E500557606 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
 		};
-		E19C3537288969FF007BC683 /* Kingfisher */ = {
+		E1AB86E228B6026000557606 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E174E4192887AE5400B11EC2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = E1AB86E128B6026000557606 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
 		};
-		E19C353A28896A0B007BC683 /* Toast */ = {
+		E1AB86E428B6026000557606 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E174E41C2887AE5F00B11EC2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
+			package = E1AB86E128B6026000557606 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

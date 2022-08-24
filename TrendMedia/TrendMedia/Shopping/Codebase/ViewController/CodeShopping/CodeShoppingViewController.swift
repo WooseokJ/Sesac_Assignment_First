@@ -154,3 +154,65 @@ extension CodeShoppingViewController: ContentsMainTextDelegate {
     }
     
 }
+
+
+extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let taskCount = tasks else { return 0 }
+        return taskCount.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CodeShoppingTableViewCell.reuseIdentifier, for: indexPath) as! CodeShoppingTableViewCell
+        // 셀디자인
+        cell.backgroundColor = .systemGray5
+        cell.layer.cornerRadius = 8
+        cell.clipsToBounds = true
+
+        // 셀 내용입력
+        guard tasks != nil else{return cell}
+        cell.labelText.text = tasks[indexPath.row].titleName
+        
+     
+        // 체크박스
+        cell.checkButton.tag = indexPath.row
+        cell.checkBoxCellDelegate = self
+        let checkButtonImage = tasks[indexPath.row].checkBox ? "checkmark.square.fill" : "checkmark.square"
+        cell.checkButton.setImage(UIImage(systemName: checkButtonImage), for: .normal)
+        
+        // 즐겨찾기
+        cell.checkStar.tag = indexPath.row
+        cell.checkStarCellDelegate = self
+        let checkStarImage = tasks[indexPath.row].checkStar ? "star.fill" : "star"
+        cell.checkStar.setImage(UIImage(systemName: checkStarImage), for: .normal)
+        return cell
+    }
+
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let item = tasks?[indexPath.row]
+            try! localRealm.write {
+                localRealm.delete(item!)
+            }
+            tableView.reloadData()
+        }
+    }
+    
+    // 선택시
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Shopping", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: CodeShoppingDetailViewController.reuseIdentifier) as! CodeShoppingDetailViewController
+        vc.labelContent = tasks[indexPath.row].titleName
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
+
+

@@ -139,6 +139,21 @@
             </objects>
             <point key="canvasLocation" x="1275" y="78"/>
         </scene>
+        <!--Code Shopping Detail View Controller-->
+        <scene sceneID="4QL-hc-s8v">
+            <objects>
+                <viewController storyboardIdentifier="CodeShoppingDetailViewController" id="pVp-wZ-pIr" customClass="CodeShoppingDetailViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iPK-MO-dx9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A3d-8z-P4V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qz-fa-pt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="90"/>
+        </scene>
     </scenes>
     <resources>
         <image name="star" catalog="system" width="128" height="116"/>

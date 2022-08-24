@@ -60,8 +60,6 @@ class RecommendCollectionViewController: UICollectionViewController {
         view.makeToast("\(indexPath.item)번쨰 셀을 선택",duration:1,position:.center) //이건 외우는거아니고 찾아보는거 (깃허브 라이브러리 리드미확인)
         self.navigationController?.popViewController(animated: true)
         
-    
-    
     }
     
 }
