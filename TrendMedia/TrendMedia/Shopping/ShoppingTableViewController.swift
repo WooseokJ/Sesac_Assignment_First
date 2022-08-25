@@ -18,7 +18,7 @@ class ShoppingTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 100
         AddButton.setTitle("추가", for: .normal)
-        AddButton.setTitleColor(.white, for: .normal)
+        AddButton.setTitleColor(.black, for: .normal)
         AddButton.backgroundColor = .systemGray
         inputTextField.attributedPlaceholder = NSAttributedString(string: "무엇을 구매하실 건가요?", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         inputTextField.backgroundColor = .systemGray3

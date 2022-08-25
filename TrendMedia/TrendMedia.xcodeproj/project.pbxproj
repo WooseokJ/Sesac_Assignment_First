@@ -44,6 +44,7 @@
 		E1A34B0F2886478C0050FFA5 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */; };
 		E1A34B1128864B8E0050FFA5 /* BucketlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */; };
 		E1A34B1328864D910050FFA5 /* BucketlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */; };
+		E1AACF8628B7DB330083AF31 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AACF8528B7DB330083AF31 /* CancelButton.swift */; };
 		E1AB86CF28B5FA3000557606 /* CodeShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB86CE28B5FA3000557606 /* CodeShoppingDetailViewController.swift */; };
 		E1AB86D128B5FA6A00557606 /* CodeShoppingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB86D028B5FA6A00557606 /* CodeShoppingDetailView.swift */; };
 		E1B8087E288527F4006651D1 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B8087D288527F4006651D1 /* Setting.storyboard */; };
@@ -105,6 +106,7 @@
 		E1A34B0E2886478C0050FFA5 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E1A34B1028864B8E0050FFA5 /* BucketlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewController.swift; sourceTree = "<group>"; };
 		E1A34B1228864D910050FFA5 /* BucketlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewCell.swift; sourceTree = "<group>"; };
+		E1AACF8528B7DB330083AF31 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		E1AB86CE28B5FA3000557606 /* CodeShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeShoppingDetailViewController.swift; sourceTree = "<group>"; };
 		E1AB86D028B5FA6A00557606 /* CodeShoppingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeShoppingDetailView.swift; sourceTree = "<group>"; };
 		E1B8087D288527F4006651D1 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				E10B083028B3622C005EB045 /* CodeShoppingButton.swift */,
+				E1AACF8528B7DB330083AF31 /* CancelButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				E10B083428B3687A005EB045 /* RealmModel.swift in Sources */,
 				E1A34B0D2886451A0050FFA5 /* UIViewController+Extension.swift in Sources */,
 				E174E41028878CA900B11EC2 /* StructMovie.swift in Sources */,
+				E1AACF8628B7DB330083AF31 /* CancelButton.swift in Sources */,
 				E1CC1E9328B7A1F70038651C /* BackUpViewController.swift in Sources */,
 				E14D5B5C2886FA5E00B70347 /* ShoppingTableViewCell.swift in Sources */,
 				E10B082528B35B53005EB045 /* CodeShoppingView.swift in Sources */,

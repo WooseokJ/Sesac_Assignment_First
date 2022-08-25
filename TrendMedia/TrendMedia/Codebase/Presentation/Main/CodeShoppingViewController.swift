@@ -69,7 +69,7 @@ class CodeShoppingViewController: UIViewController {
         return UIMenu(title: "", image: nil, identifier: nil, options: [], children: menuFilterItems)
     }
 
-    override func viewWillAppear(_ animated: Bool) { // overFullScreen보다 FullScreen으로 바꾸면 또달라져(vc.modalPresentationStyle = .overFullScreen)   present,overCurrentContext,overFullScrenn 은 viewwillAppear 실행 X
+    override func viewWillAppear(_ animated: Bool) { 
         super.viewWillAppear(animated)
         print(#function,"f")
         fetchRealm()
@@ -82,7 +82,7 @@ class CodeShoppingViewController: UIViewController {
         mainview.tableView.delegate = self
         
         self.navigationItem.title = "쇼핑"
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.systemGray]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         //        self.view.addGestureRecognizer(mainview.tapGesture)
         
         mainview.addButton.addTarget(self, action: #selector(addButtonClick), for: .touchUpInside)
@@ -93,25 +93,27 @@ class CodeShoppingViewController: UIViewController {
             localRealm.delete(deleteInfo)
         }
         
-        //데이터 삭제하는 두번쨰방법
+        // 데이터 삭제하는 두번쨰방법
         //        try! localRealm.write {
         //            localRealm.deleteAll()
         //        }
         
-        // 왼쪽 네비바
+        //MARK: 왼쪽 네비바
         if #available(iOS 14.0, *) { // ios14.0에서만 가능 , 14.0미만은 alert으로 띄우자!! (생략)
             let sortButton = UIBarButtonItem(title: "정렬", image: nil, primaryAction: nil, menu: sortMenu)
             let filterButton = UIBarButtonItem(title:"필터", image: nil, primaryAction: nil, menu: filterMenu)
             self.navigationItem.leftBarButtonItems = [sortButton, filterButton]
         }
 
-        // 오른쪽 네비바
+        //MARK: 오른쪽 네비바
         let backupButton = UIBarButtonItem(title: "백업 및 복구", style: .plain, target: self, action: #selector(backupButtonClicked))
         self.navigationItem.rightBarButtonItem = backupButton
 
         // 체크박스 클릭시
         CodeShoppingTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
     }
+    
+    //MARK: 버튼클릭시
     // 오른쪽 네비바 백업버튼 클릭시
     @objc func backupButtonClicked() {
         let vc = BackUpViewController()
