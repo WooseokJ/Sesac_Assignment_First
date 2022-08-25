@@ -1,5 +1,5 @@
 //
-//  CodeShppingTextField.swift
+//  CodeShoppingButton.swift
 //  TrendMedia
 //
 //  Created by useok on 2022/08/22.
@@ -8,21 +8,21 @@
 import Foundation
 import UIKit
 
-class CodeShppingTextField: UITextField {
-    
-    
+class CodeShoppingButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        textFieldDesign()
+        buttonDesign()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func textFieldDesign() {
+    func buttonDesign() {
         self.layer.cornerRadius = 8
+        self.setTitleColor(.systemGray, for: .normal)
+        self.layer.borderWidth = 2
         self.layer.backgroundColor = UIColor.systemGray5.cgColor
-        self.textColor = .black
+        self.layer.borderColor = UIColor.black.cgColor
     }
+    
 }
-

@@ -2,7 +2,7 @@
 
 import UIKit
 
-class CodeShoppingDetailViewController: UIViewController {
+class CodeShoppingDetailViewController: BaseViewController {
 
     let detailview = CodeShoppingDetailView()
     
@@ -19,7 +19,7 @@ class CodeShoppingDetailViewController: UIViewController {
         detailview.textLabel.text = labelContent
     }
     
-
+    
 
 
 }

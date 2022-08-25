@@ -10,20 +10,20 @@ import UIKit
 import RealmSwift
 import SnapKit
 
-class CodeShoppingView: UIView{
+class CodeShoppingView: BaseView {
     
-    // MARK: 연결
+    // MARK: CodeShoppingViewController 연결
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-        setConstants()
+        setConstraints()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: 크기
-    
     let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer() // 텝재스쳐
     //입력 텍스트필드
     let inputTextField: UITextField = {
@@ -37,27 +37,24 @@ class CodeShoppingView: UIView{
         button.setTitle("추가", for: .normal)
         return button
     }()
-
     // 상품 테이블뷰
     lazy var tableView: UITableView = {
         let view = UITableView()
         view.register(CodeShoppingTableViewCell.self, forCellReuseIdentifier: CodeShoppingTableViewCell.reuseIdentifier)
-        
         view.backgroundColor = .black
         view.rowHeight = 30
         return view
     }()
 
-
     //MARK: 뷰 등록
-    func configure() {
+    override func configure() {
         [inputTextField,addButton,tableView].forEach {
             self.addSubview($0)
         }
     }
 
     //MARK: 위치
-    func setConstants() {
+    override func setConstraints() {
         // 텍스트입력
         inputTextField.snp.makeConstraints {
             $0.top.equalTo(self.safeAreaLayoutGuide)
@@ -71,7 +68,7 @@ class CodeShoppingView: UIView{
             $0.trailing.equalTo(inputTextField.snp.trailing)
             $0.width.equalTo(inputTextField.snp.width).multipliedBy(0.25)
         }
-
+        //테이블뷰
         tableView.snp.makeConstraints { make in
             make.top.equalTo(inputTextField.snp.bottom).offset(30)
             make.bottom.equalTo(30)

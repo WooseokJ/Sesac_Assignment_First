@@ -8,18 +8,16 @@
 import UIKit
 import RealmSwift
 import SnapKit
-
-class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate {
+// UIGestureRecognizerDelegate
+class CodeShoppingViewController: UIViewController {
     
-    
-    //MARK: 뷰 그리기
+    //MARK: 뷰 가져오기
     let mainview = CodeShoppingView()
     
     override func loadView() {
         super.view = mainview
     }
-    
-    
+
     //MARK: DB 가져오기
     let localRealm = try! Realm()
     var tasks: Results<PurchaseInfo>! {
@@ -76,7 +74,7 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
         print(#function,"f")
         fetchRealm()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -100,32 +98,40 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
         //            localRealm.deleteAll()
         //        }
         
+        // 왼쪽 네비바
         if #available(iOS 14.0, *) { // ios14.0에서만 가능 , 14.0미만은 alert으로 띄우자!! (생략)
             let sortButton = UIBarButtonItem(title: "정렬", image: nil, primaryAction: nil, menu: sortMenu)
             let filterButton = UIBarButtonItem(title:"필터", image: nil, primaryAction: nil, menu: filterMenu)
             self.navigationItem.leftBarButtonItems = [sortButton, filterButton]
         }
-        
+
+        // 오른쪽 네비바
+        let backupButton = UIBarButtonItem(title: "백업 및 복구", style: .plain, target: self, action: #selector(backupButtonClicked))
+        self.navigationItem.rightBarButtonItem = backupButton
+
+        // 체크박스 클릭시
         CodeShoppingTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
-        
     }
-    func  fetchRealm() {
+    // 오른쪽 네비바 백업버튼 클릭시
+    @objc func backupButtonClicked() {
+        let vc = BackUpViewController()
+        transition(vc, transitionStyle: .presentFullNavigation)
+    }
+
+    func fetchRealm() {
         tasks = localRealm.objects(PurchaseInfo.self)
     }
-    
+    //정렬버튼
     @objc func sortButtonClicked() {
         tasks = localRealm.objects(PurchaseInfo.self).sorted(byKeyPath: "titleName", ascending: true)
     }
-    @objc func filterButtonClicked() {
 
-    }
-    
-    // 추가 버튼클릭시
+    //MARK: 추가 버튼클릭시
     @objc func addButtonClick() {
         guard let inputText = mainview.inputTextField.text else { return }
         let ta = PurchaseInfo(titleName: inputText)
         print(ta)
-        try! localRealm.write{
+        try! localRealm.write {
             localRealm.add(ta)
             print("추가 성공")
             tasks = localRealm.objects(PurchaseInfo.self)
@@ -133,32 +139,32 @@ class CodeShoppingViewController: UIViewController, UIGestureRecognizerDelegate 
         }
         mainview.inputTextField.text = ""
     }
+
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive event: UIEvent) -> Bool {
         self.view.endEditing(true)
     }
 }
 
 extension CodeShoppingViewController: ContentsMainTextDelegate {
+    
     func checkButtonFunc(_ sender: UIButton) {
         try! self.localRealm.write {
             self.tasks[sender.tag].checkBox = !self.tasks[sender.tag].checkBox
         }
         self.fetchRealm()
     }
+    
     func checkStarFunc(_ sender: UIButton) {
         try! self.localRealm.write {
             self.tasks[sender.tag].checkStar = !self.tasks[sender.tag].checkStar
         }
-        print(tasks)
         self.fetchRealm()
     }
     
 }
 
-
 extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let taskCount = tasks else { return 0 }
         return taskCount.count
@@ -174,14 +180,13 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
         // 셀 내용입력
         guard tasks != nil else{return cell}
         cell.labelText.text = tasks[indexPath.row].titleName
-        
-     
+
         // 체크박스
         cell.checkButton.tag = indexPath.row
         cell.checkBoxCellDelegate = self
         let checkButtonImage = tasks[indexPath.row].checkBox ? "checkmark.square.fill" : "checkmark.square"
         cell.checkButton.setImage(UIImage(systemName: checkButtonImage), for: .normal)
-        
+
         // 즐겨찾기
         cell.checkStar.tag = indexPath.row
         cell.checkStarCellDelegate = self
@@ -190,11 +195,10 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
 
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
-    
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let item = tasks?[indexPath.row]
@@ -204,7 +208,7 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
             tableView.reloadData()
         }
     }
-    
+
     // 선택시
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Shopping", bundle: nil)
@@ -212,7 +216,6 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
         vc.labelContent = tasks[indexPath.row].titleName
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
 
