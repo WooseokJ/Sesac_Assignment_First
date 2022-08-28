@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-class CodeShoppingTableViewCell: BaseTableViewCell {
+class DetailTableViewCell: BaseTableViewCell {
         
     
     //MARK: UITableViewCell 에 메서드 전달

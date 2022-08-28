@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class CodeShoppingDetailView: BaseView {
+class DetailView: BaseView {
     
     //MARK: 연결
     override init(frame: CGRect) {
@@ -28,13 +28,12 @@ class CodeShoppingDetailView: BaseView {
        let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.backgroundColor = .yellow
         return label
     }()
     // 이미지뷰
     let imageView: UIImageView = {
         let image = UIImageView()
-        image.backgroundColor = .green
+        image.backgroundColor = .lightGray
         return image
     }()
     // 이미지버튼

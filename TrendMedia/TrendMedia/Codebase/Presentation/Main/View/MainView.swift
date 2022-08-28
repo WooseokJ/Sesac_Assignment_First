@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SnapKit
 
-class CodeShoppingView: BaseView {
+class MainView: BaseView {
     
     // MARK: CodeShoppingViewController 연결
     override init(frame: CGRect) {
@@ -40,7 +40,7 @@ class CodeShoppingView: BaseView {
     // 상품 테이블뷰
     lazy var tableView: UITableView = {
         let view = UITableView()
-        view.register(CodeShoppingTableViewCell.self, forCellReuseIdentifier: CodeShoppingTableViewCell.reuseIdentifier)
+        view.register(DetailTableViewCell.self, forCellReuseIdentifier: DetailTableViewCell.reuseIdentifier)
         view.backgroundColor = .black
         view.rowHeight = 30
         return view

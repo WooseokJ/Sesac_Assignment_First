@@ -9,10 +9,14 @@ import UIKit
 import RealmSwift
 import SnapKit
 // UIGestureRecognizerDelegate
-class CodeShoppingViewController: UIViewController {
+
+
+
+
+class MainViewController: UIViewController {
     
     //MARK: 뷰 가져오기
-    let mainview = CodeShoppingView()
+    let mainview = MainView()
     
     override func loadView() {
         super.view = mainview
@@ -89,9 +93,9 @@ class CodeShoppingViewController: UIViewController {
         print("Realm is located at:", localRealm.configuration.fileURL!)
         
         let deleteInfo = localRealm.objects(PurchaseInfo.self)
-        try! localRealm.write {
-            localRealm.delete(deleteInfo)
-        }
+//        try! localRealm.write {
+//            localRealm.delete(deleteInfo)
+//        }
         
         // 데이터 삭제하는 두번쨰방법
         //        try! localRealm.write {
@@ -110,7 +114,7 @@ class CodeShoppingViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = backupButton
 
         // 체크박스 클릭시
-        CodeShoppingTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
+        DetailTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
     }
     
     //MARK: 버튼클릭시
@@ -147,7 +151,7 @@ class CodeShoppingViewController: UIViewController {
     }
 }
 
-extension CodeShoppingViewController: ContentsMainTextDelegate {
+extension MainViewController: ContentsMainTextDelegate {
     
     func checkButtonFunc(_ sender: UIButton) {
         try! self.localRealm.write {
@@ -165,7 +169,7 @@ extension CodeShoppingViewController: ContentsMainTextDelegate {
     
 }
 
-extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let taskCount = tasks else { return 0 }
@@ -173,7 +177,7 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CodeShoppingTableViewCell.reuseIdentifier, for: indexPath) as! CodeShoppingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.reuseIdentifier, for: indexPath) as! DetailTableViewCell
         // 셀디자인
         cell.backgroundColor = .systemGray5
         cell.layer.cornerRadius = 8
@@ -213,11 +217,44 @@ extension CodeShoppingViewController: UITableViewDelegate, UITableViewDataSource
 
     // 선택시
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sb = UIStoryboard(name: "Shopping", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: CodeShoppingDetailViewController.reuseIdentifier) as! CodeShoppingDetailViewController
-        vc.labelContent = tasks[indexPath.row].titleName
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = DetailViewController()
+        vc.labelContent = tasks?[indexPath.row].titleName
+        transition(vc, transitionStyle: .presentFullNavigation)
     }
 }
 
-
+//
+//// 전처리
+//#if DEBUG
+//
+//import SwiftUI
+//@available(iOS 13.0, *)
+//
+//// UIViewControllerRepresentable을 채택
+//struct ViewControllerRepresentable: UIViewControllerRepresentable {
+//    // update
+//    // _ uiViewController: UIViewController로 지정
+//    func updateUIViewController(_ uiViewController: UIViewController , context: Context) {
+//        
+//    }
+//    // makeui
+//    func makeUIViewController(context: Context) -> UIViewController {
+//    // Preview를 보고자 하는 Viewcontroller 이름
+//    // e.g.)
+//        return WebkitViewController()
+//    }
+//}
+//
+//struct ViewController_Previews: PreviewProvider {
+//    
+//    @available(iOS 13.0, *)
+//    static var previews: some View {
+//        // UIViewControllerRepresentable에 지정된 이름.
+//        ViewControllerRepresentable()
+//
+//// 테스트 해보고자 하는 기기
+//            .previewDevice("iPhone 11")
+//    }
+//}
+//#endif
+////

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="244-Az-6aq">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="502.89855072463774" y="77.678571428571431"/>
         </scene>
-        <!--Code Shopping View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="xzV-VK-aWo">
             <objects>
-                <viewController storyboardIdentifier="CodeShoppingViewController" id="244-Az-6aq" customClass="CodeShoppingViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CodeShoppingViewController" id="244-Az-6aq" customClass="MainViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCI-rA-09W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1275" y="78"/>
         </scene>
-        <!--Code Shopping Detail View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="4QL-hc-s8v">
             <objects>
-                <viewController storyboardIdentifier="CodeShoppingDetailViewController" id="pVp-wZ-pIr" customClass="CodeShoppingDetailViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CodeShoppingDetailViewController" id="pVp-wZ-pIr" customClass="DetailViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iPK-MO-dx9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
