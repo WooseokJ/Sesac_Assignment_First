@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-class DetailTableViewCell: BaseTableViewCell {
+class MainTableViewCell: BaseTableViewCell {
         
     
     //MARK: UITableViewCell 에 메서드 전달

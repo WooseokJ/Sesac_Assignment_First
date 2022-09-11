@@ -40,7 +40,7 @@ class MainView: BaseView {
     // 상품 테이블뷰
     lazy var tableView: UITableView = {
         let view = UITableView()
-        view.register(DetailTableViewCell.self, forCellReuseIdentifier: DetailTableViewCell.reuseIdentifier)
+        view.register(MainTableViewCell.self, forCellReuseIdentifier: MainTableViewCell.reuseIdentifier)
         view.backgroundColor = .black
         view.rowHeight = 30
         return view

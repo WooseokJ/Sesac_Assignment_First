@@ -114,7 +114,7 @@ class MainViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = backupButton
 
         // 체크박스 클릭시
-        DetailTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
+        MainTableViewCell().checkButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
     }
     
     //MARK: 버튼클릭시
@@ -177,7 +177,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.reuseIdentifier, for: indexPath) as! DetailTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseIdentifier, for: indexPath) as! MainTableViewCell
         // 셀디자인
         cell.backgroundColor = .systemGray5
         cell.layer.cornerRadius = 8
@@ -222,39 +222,3 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         transition(vc, transitionStyle: .presentFullNavigation)
     }
 }
-
-//
-//// 전처리
-//#if DEBUG
-//
-//import SwiftUI
-//@available(iOS 13.0, *)
-//
-//// UIViewControllerRepresentable을 채택
-//struct ViewControllerRepresentable: UIViewControllerRepresentable {
-//    // update
-//    // _ uiViewController: UIViewController로 지정
-//    func updateUIViewController(_ uiViewController: UIViewController , context: Context) {
-//        
-//    }
-//    // makeui
-//    func makeUIViewController(context: Context) -> UIViewController {
-//    // Preview를 보고자 하는 Viewcontroller 이름
-//    // e.g.)
-//        return WebkitViewController()
-//    }
-//}
-//
-//struct ViewController_Previews: PreviewProvider {
-//    
-//    @available(iOS 13.0, *)
-//    static var previews: some View {
-//        // UIViewControllerRepresentable에 지정된 이름.
-//        ViewControllerRepresentable()
-//
-//// 테스트 해보고자 하는 기기
-//            .previewDevice("iPhone 11")
-//    }
-//}
-//#endif
-////

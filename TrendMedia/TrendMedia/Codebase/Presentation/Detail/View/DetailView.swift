@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import SnapKit
+import RealmSwift
+import Kingfisher
 
 class DetailView: BaseView {
     
@@ -23,6 +25,7 @@ class DetailView: BaseView {
     }
     
     //MARK: 크기
+    
     // 선택한 텍스트라벨
     let textLabel: UILabel = {
        let label = UILabel()
@@ -31,9 +34,8 @@ class DetailView: BaseView {
         return label
     }()
     // 이미지뷰
-    let imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let image = UIImageView()
-        image.backgroundColor = .lightGray
         return image
     }()
     // 이미지버튼
